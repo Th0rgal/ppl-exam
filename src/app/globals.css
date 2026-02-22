@@ -490,12 +490,55 @@ body {
 }
 
 @media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+
   .sidebar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding: 0.5rem;
+    z-index: 20;
+  }
+
+  .sidebar-logo {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .sidebar nav {
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+    padding-bottom: 0.25rem;
+  }
+
+  .nav-section {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+
+  .nav-section-title {
     display: none;
   }
+
+  .nav-link {
+    white-space: nowrap;
+    padding: 0.5rem 0.75rem;
+  }
+
   .main-content {
     margin-left: 0;
+    padding: 1rem;
   }
+
   .grid-2, .grid-3 {
     grid-template-columns: 1fr;
   }

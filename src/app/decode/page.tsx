@@ -47,6 +47,28 @@ const cloudTypes: Record<string, string> = {
   'NSC': 'No Significant Cloud',
 };
 
+function parseVisibility(parts: string): string {
+  const tokens = parts.trim().toUpperCase().split(/\s+/);
+  const windIndex = tokens.findIndex((token) => /^(VRB|\d{3})\d{2,3}(G\d{2,3})?KT$/.test(token));
+  const startIndex = windIndex >= 0 ? windIndex + 1 : 0;
+
+  for (let i = startIndex; i < tokens.length; i++) {
+    const token = tokens[i];
+    if (token === 'CAVOK') return '10km+';
+    if (/^\d{4}$/.test(token)) {
+      const vis = parseInt(token, 10);
+      return vis >= 9999 ? '10km+' : `${vis}m`;
+    }
+
+    if (/^\d{1,2}SM$/.test(token)) {
+      const miles = parseInt(token.replace('SM', ''), 10);
+      return `${Math.round(miles * 1609)}m`;
+    }
+  }
+
+  return '';
+}
+
 function decodeMETAR(metar: string): DecodedMETAR | null {
   try {
     const parts = metar.trim().toUpperCase();
@@ -76,11 +98,7 @@ function decodeMETAR(metar: string): DecodedMETAR | null {
     }
 
     // Visibility
-    const visMatch = parts.match(/(\d{4})/);
-    if (visMatch) {
-      const vis = parseInt(visMatch[1]);
-      result.visibility = vis >= 9999 ? '10km+' : `${vis}m`;
-    }
+    result.visibility = parseVisibility(parts);
 
     // Weather (look for weather phenomena after visibility)
     const wxMatch = parts.match(/\s((MI|BC|PR|DR|BL|SH|TS|FZ|DZ|RA|SN|SG|GR|GS|UP|\+|-){1,2}(RA|SN|DZ|SN|SG|PL|GR|GS)?)\s/);
@@ -133,7 +151,7 @@ function isVMC(metar: string): { vmc: boolean; reason: string } {
 
   // Check visibility (need 5000m for VMC in Portugal Class G)
   const vis = decoded.visibility;
-  const visNum = parseInt(vis) || 9999;
+  const visNum = vis.includes('10km+') ? 10000 : parseInt(vis, 10) || 9999;
   
   // Check clouds - need clear of cloud below 1500ft
   let ceiling = 99999;
@@ -145,7 +163,7 @@ function isVMC(metar: string): { vmc: boolean; reason: string } {
     }
   }
 
-  if (visNum < 5000) return { vmc: false, reason: `Visibility ${vis}m < 5000m` };
+  if (visNum < 5000) return { vmc: false, reason: `Visibility ${vis} < 5000m` };
   if (ceiling < 500) return { vmc: false, reason: `Ceiling ${ceiling}ft < 500ft AGL` };
 
   return { vmc: true, reason: 'VMC conditions' };

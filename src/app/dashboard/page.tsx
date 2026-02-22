@@ -70,7 +70,7 @@ export default function Dashboard() {
         <div className="card">
           <div className="card-header">
             <h3 className="card-title">Common Errors</h3>
-            <Link href="/drills/weakness" className="btn btn-secondary">
+            <Link href="/drills" className="btn btn-secondary">
               View All <ChevronRight size={16} />
             </Link>
           </div>

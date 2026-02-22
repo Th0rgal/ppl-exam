@@ -1,9 +1,8 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import AppLayout from '../AppLayout';
-import Link from 'next/link';
-import { BookOpen, Search, ChevronRight, ArrowRight, RotateCcw, Check, X } from 'lucide-react';
+import { Search } from 'lucide-react';
 import glossary from '../../data/glossary.json';
 
 export default function GlossaryPage() {
@@ -66,8 +65,8 @@ export default function GlossaryPage() {
                 <p className="text-muted">{item.definition}</p>
                 <div className="flex gap-2 mt-2">
                   <span className="tag">{item.category}</span>
-                  {item.related?.map((r: string) => (
-                    <span key={r} className="tag tag-blue">{r}</span>
+                  {item.related?.map((r: string, index: number) => (
+                    <span key={`${item.term}-${r}-${index}`} className="tag tag-blue">{r}</span>
                   ))}
                 </div>
               </div>
@@ -83,6 +82,11 @@ export default function GlossaryPage() {
             </div>
           </div>
         ))}
+        {filtered.length === 0 && (
+          <div className="empty-state card">
+            No terms found. Try another keyword or reset the category.
+          </div>
+        )}
       </div>
     </AppLayout>
   );

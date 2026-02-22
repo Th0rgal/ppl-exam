@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import AppLayout from '../AppLayout';
 import { 
   Settings as SettingsIcon, 
@@ -8,8 +8,7 @@ import {
   Download, 
   Upload, 
   Trash2,
-  Database,
-  MapPin
+  Database
 } from 'lucide-react';
 
 const aerodromes = [
@@ -36,6 +35,18 @@ export default function SettingsPage() {
     theme: 'light',
     dailyGoal: 25,
   });
+
+  useEffect(() => {
+    const saved = localStorage.getItem('ppl-settings');
+    if (!saved) return;
+
+    try {
+      const parsed = JSON.parse(saved);
+      setSettings((prev) => ({ ...prev, ...parsed }));
+    } catch {
+      // Ignore malformed local storage payloads and keep defaults.
+    }
+  }, []);
 
   const handleSave = () => {
     localStorage.setItem('ppl-settings', JSON.stringify(settings));
@@ -138,7 +149,7 @@ export default function SettingsPage() {
               type="number" 
               className="input"
               value={settings.magneticVariation}
-              onChange={(e) => setSettings({ ...settings, magneticVariation: parseInt(e.target.value) })}
+              onChange={(e) => setSettings({ ...settings, magneticVariation: Number(e.target.value) || 0 })}
             />
             <p className="text-sm text-muted mt-1">
               For {settings.baseAerodrome} region (Portugal ~{-7}°W)
