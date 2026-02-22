@@ -53,33 +53,36 @@ export default function DailyDrillPage() {
   const [timeLeft, setTimeLeft] = useState(25 * 60);
   const [completed, setCompleted] = useState<number[]>([]);
 
-  const dailyExercises = shuffleArray(drillExercises).slice(0, 15);
+  const [dailyExercises] = useState(() => shuffleArray(drillExercises).slice(0, 15));
 
-  const handleStart = () => {
+  const handleStart = useCallback(() => {
     setStarted(true);
     setTotal(dailyExercises.length);
-  };
+  }, [dailyExercises.length]);
 
-  const handleAnswer = (correct: boolean) => {
-    if (correct) setScore(score + 1);
-    setCompleted([...completed, currentIndex]);
+  const handleAnswer = useCallback((correct: boolean) => {
+    if (correct) setScore(s => s + 1);
+    setCompleted(prev => [...prev, currentIndex]);
     
     setTimeout(() => {
-      if (currentIndex < dailyExercises.length - 1) {
-        setCurrentIndex(currentIndex + 1);
-        setShowAnswer(false);
-      } else {
-        setCompleted([...completed, currentIndex, -1]);
-      }
+      setCurrentIndex(idx => {
+        if (idx < dailyExercises.length - 1) {
+          return idx + 1;
+        }
+        setCompleted(prev => [...prev, -1]);
+        return idx;
+      });
+      setShowAnswer(false);
     }, 500);
-  };
+  }, [currentIndex, dailyExercises.length]);
 
   useEffect(() => {
     if (!started || completed.includes(-1)) return;
+    
     const timer = setInterval(() => {
       setTimeLeft((t) => {
         if (t <= 1) {
-          setCompleted([...completed, -1]);
+          setCompleted(prev => [...prev, -1]);
           return 0;
         }
         return t - 1;
