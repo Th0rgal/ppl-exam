@@ -1,0 +1,882 @@
+[
+  {
+    "id": "abbr-001",
+    "acronym": "AD",
+    "expansion": "Aerodrome",
+    "meaning": "A defined area on land or water used for aircraft arrival, departure and surface movement",
+    "context": "Charts, AIP",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-002",
+    "acronym": "AIS",
+    "expansion": "Aeronautical Information Service",
+    "meaning": "Service responsible for providing aeronautical information to flights",
+    "context": "AIP, briefing",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-003",
+    "acronym": "APP",
+    "expansion": "Approach",
+    "meaning": "Air traffic control service for arriving and departing aircraft",
+    "context": "Frequencies, ATC",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-004",
+    "acronym": "ATIS",
+    "expansion": "Automatic Terminal Information Service",
+    "meaning": "Continuous broadcast of meteorological information at controlled aerodromes",
+    "context": "Airport info, radio",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-005",
+    "acronym": "ATS",
+    "expansion": "Air Traffic Service",
+    "meaning": "General term for ATC, flight information and alert services",
+    "context": "Services",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-006",
+    "acronym": "AWY",
+    "expansion": "Airway",
+    "meaning": "A control area or portion thereof designed for air traffic",
+    "context": "Routes, ENR",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-007",
+    "acronym": "CAT",
+    "expansion": "Category",
+    "meaning": "Classification of aircraft performance (A, B, C, D, E)",
+    "context": "Approach categories",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-008",
+    "acronym": "CLR",
+    "expansion": "Clearance",
+    "meaning": "Authorization for aircraft to proceed under specified conditions",
+    "context": "ATC, departure",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-009",
+    "acronym": "CTR",
+    "expansion": "Control Zone",
+    "meaning": "Airspace extending from the surface to a specified upper limit",
+    "context": "Airspace classification",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-010",
+    "acronym": "DME",
+    "expansion": "Distance Measuring Equipment",
+    "meaning": "Radio navigation aid providing distance to a station",
+    "context": "Navigation",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-011",
+    "acronym": "EA",
+    "expansion": "Emergency Area",
+    "meaning": "Designated area for use in emergency",
+    "context": "Emergency procedures",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-012",
+    "acronym": "ETA/ETD",
+    "expansion": "Estimated Time of Arrival/Departure",
+    "meaning": "Predicted time of arrival at or departure from a point",
+    "context": "Flight planning",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-013",
+    "acronym": "FIC",
+    "expansion": "Flight Information Centre",
+    "meaning": "Provides flight information and alert services",
+    "context": "AIS, briefing",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-014",
+    "acronym": "FIR",
+    "expansion": "Flight Information Region",
+    "meaning": "Airspace where flight information and alert services are provided",
+    "context": "Airspace",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-015",
+    "acronym": "FL",
+    "expansion": "Flight Level",
+    "meaning": "Altitude above standard pressure 1013.25 hPa (300ft increments)",
+    "context": "Cruise levels",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-016",
+    "acronym": "FPL",
+    "expansion": "Filed Flight Plan",
+    "meaning": "Complete plan for a flight submitted to ATS",
+    "context": "Flight planning",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-017",
+    "acronym": "GND",
+    "expansion": "Ground",
+    "meaning": "Ground control frequency or surface movement area",
+    "context": "ATC",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-018",
+    "acronym": "H24",
+    "expansion": "Hours of Operation - 24 hours",
+    "meaning": "Continuous service",
+    "context": "Services, hours",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-019",
+    "acronym": "HGT",
+    "expansion": "Height",
+    "vertical distance above a reference point (usually terrain)",
+    "context": "Altimetry",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-020",
+    "acronym": "HPZ",
+    "expansion": "Helicopter Protection Zone",
+    "meaning": "Designated zone for helicopter operations",
+    "context": "Heliports",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-021",
+    "acronym": "HR",
+    "expansion": "Hours",
+    "meaning": "Time period",
+    "context": "Services",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-022",
+    "acronym": "IAF",
+    "expansion": "Initial Approach Fix",
+    "meaning": "Point where the initial approach segment begins",
+    "context": "Approach procedures",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-023",
+    "acronym": "IAO",
+    "expansion": "In and Out of Cloud",
+    "meaning": "Flight in cloud and out of cloud",
+    "context": "Meteorology",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-024",
+    "acronym": "IF",
+    "expansion": "Intermediate Fix",
+    "meaning": "Point on the intermediate approach segment",
+    "context": "Approach procedures",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-025",
+    "acronym": "ILS",
+    "expansion": "Instrument Landing System",
+    "meaning": "Precision approach aid providing lateral and vertical guidance",
+    "context": "Approaches",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-026",
+    "acronym": "IM",
+    "expansion": "Inner Marker",
+    "meaning": "Marker beacon at ILS inner marker point",
+    "context": "ILS approach",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-027",
+    "acronym": "INFO",
+    "expansion": "Information",
+    "meaning": "Flight information service",
+    "context": "ATC",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "acronym": "IPO",
+    "expansion": "In Plane of Orbit",
+    "meaning": "Aircraft flying around a facility",
+    "context": "Holding",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }],
+    "id": "abbr-028"
+  },
+  {
+    "id": "abbr-029",
+    "acronym": "KGH",
+    "expansion": "Kilograms per Hour",
+    "meaning": "Fuel flow rate",
+    "context": "Performance",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-030",
+    "acronym": "LDA",
+    "expansion": "Landing Distance Available",
+    "meaning": "Distance from threshold to where aircraft can land and stop",
+    "context": "Runway data",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-031",
+    "acronym": "LDG",
+    "expansion": "Landing",
+    "meaning": "The act of arriving on the runway",
+    "context": "Phases of flight",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-032",
+    "acronym": "LFZ",
+    "expansion": "Landing Zone",
+    "meaning": "Designated area for landing",
+    "context": "Heliports, unprepared fields",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-033",
+    "acronym": "LMT",
+    "expansion": "Local Mean Time",
+    "meaning": "Solar time at reference meridian",
+    "context": "Time",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-034",
+    "acronym": "LOC",
+    "expansion": "Localizer",
+    "meaning": "Component of ILS providing lateral guidance",
+    "context": "Approaches",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-035",
+    "acronym": "LW",
+    "expansion": "Landing Weight",
+    "meaning": "Maximum allowable landing weight",
+    "context": "Performance",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-036",
+    "acronym": "MAPt",
+    "expansion": "Missed Approach Point",
+    "meaning": "Point where missed approach procedure begins",
+    "context": "Approach procedures",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-037",
+    "acronym": "MAX",
+    "expansion": "Maximum",
+    "meaning": "Maximum allowable value",
+    "context": "Limitations",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-038",
+    "acronym": "METAR",
+    "expansion": "Meteorological Aerodrome Report",
+    "meaning": "Routine meteorological report for aerodrome",
+    "context": "Weather",
+    "references": [{ "source": "IPMA", "doc": "METAR/TAF", "section": "Format" }]
+  },
+  {
+    "id": "abbr-039",
+    "acronym": "MIN",
+    "expansion": "Minimum",
+    "meaning": "Minimum allowable value",
+    "context": "Limitations",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-040",
+    "acronym": "MLS",
+    "expansion": "Microwave Landing System",
+    "meaning": "Precision approach system using microwave signals",
+    "context": "Approaches",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-041",
+    "acronym": "MM",
+    "expansion": "Middle Marker",
+    "meaning": "Marker beacon at middle marker point",
+    "context": "ILS approach",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-042",
+    "acronym": "MNM",
+    "expansion": "Minimum",
+    "meaning": "Minimum value required",
+    "context": "Requirements",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-043",
+    "acronym": "MOA",
+    "expansion": "Military Operating Area",
+    "meaning": "Airspace designated for military training",
+    "context": "Special use airspace",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-044",
+    "acronym": "MOV",
+    "expansion": "Movement Area",
+    "meaning": "Runways, taxiways and apron areas",
+    "context": "Aerodrome",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-045",
+    "acronym": "NDB",
+    "expansion": "Non-Directional Beacon",
+    "meaning": "Radio navigation aid transmitting radio signals",
+    "context": "Navigation",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-046",
+    "acronym": "NM",
+    "expansion": "Nautical Mile",
+    "meaning": "Unit of distance = 1852m",
+    "context": "Distance",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-047",
+    "acronym": "NOF",
+    "expansion": "NOTAM Office",
+    "meaning": "Office issuing NOTAMs",
+    "context": "AIS",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-048",
+    "acronym": "NOTAM",
+    "expansion": "Notice to Air Missions",
+    "meaning": "Notice containing information on any establishment, change or hazard",
+    "context": "Briefing",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-049",
+    "acronym": "OBS",
+    "expansion": "Observe/Observation",
+    "meaning": "To observe or observed",
+    "context": "METAR/TAF",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-050",
+    "acronym": "OM",
+    "expansion": "Outer Marker",
+    "meaning": "Marker beacon at outer marker point",
+    "context": "ILS approach",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-051",
+    "acronym": "OPS",
+    "expansion": "Operations",
+    "meaning": "Flight operations",
+    "context": "General",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-052",
+    "acronym": "PA",
+    "expansion": "Pressure Altitude",
+    "meaning": "Altitude when altimeter set to 1013.25 hPa",
+    "context": "Altimetry",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-053",
+    "acronym": "PAPI",
+    "expansion": "Precision Approach Path Indicator",
+    "meaning": "Visual approach slope indicator system",
+    "context": "Approach lighting",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-054",
+    "acronym": "PAR",
+    "expansion": "Precision Approach Radar",
+    "meaning": "Radar providing approach guidance",
+    "context": "Approaches",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-055",
+    "acronym": "PIREP",
+    "expansion": "Pilot Report",
+    "meaning": "Report from aircraft in flight",
+    "context": "Weather",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-056",
+    "acronym": "PKG",
+    "expansion": "Parking",
+    "meaning": "Parking area for aircraft",
+    "context": "Aerodrome",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-057",
+    "acronym": "PTN",
+    "expansion": "Procedure Turn",
+    "meaning": "Maneuver to reverse direction during approach",
+    "context": "Approach procedures",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-058",
+    "acronym": "PVT",
+    "expansion": "Private",
+    "meaning": "Private flight - not for hire",
+    "context": "Flight types",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-059",
+    "acronym": "QDM",
+    "expansion": "Magnetic Bearing to Station",
+    "meaning": "Bearing from aircraft to station, magnetic heading to steer",
+    "context": "Navigation",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-060",
+    "acronym": "QDR",
+    "expansion": "Magnetic Bearing from Station",
+    "meaning": "Bearing from station to aircraft",
+    "context": "Navigation",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-061",
+    "acronym": "QFE",
+    "expansion": "Atmospheric Pressure at Aerodrome",
+    "meaning": "Pressure setting giving altitude 0 on runway",
+    "context": "Altimetry",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-062",
+    "acronym": "QNH",
+    "expansion": "Altimeter Setting",
+    "meaning": "Pressure setting giving elevation on altimeter",
+    "context": "Altimetry",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-063",
+    "acronym": "QTE",
+    "expansion": "True Bearing",
+    "meaning": "Bearing relative to true north",
+    "context": "Navigation",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-064",
+    "acronym": "RAC",
+    "expansion": "Rules of the Air and Air Traffic Services",
+    "meaning": "Regulations governing air traffic",
+    "context": "Rules",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-065",
+    "acronym": "RDH",
+    "expansion": "Reference Datum Height",
+    "meaning": "Height of ILS reference datum above threshold",
+    "context": "ILS",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-066",
+    "acronym": "RE",
+    "expansion": "Recent",
+    "meaning": "Recently observed",
+    "context": "Weather",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-067",
+    "acronym": "RF",
+    "expansion": "Radius Fix",
+    "meaning": "Fix determined by radius from a navigation aid",
+    "context": "RNAV",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-068",
+    "acronym": "RMK",
+    "expansion": "Remark",
+    "meaning": "Additional information",
+    "context": "METAR/TAF",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-069",
+    "acronym": "RNAV",
+    "expansion": "Area Navigation",
+    "meaning": "Navigation allowing operations on any desired path",
+    "context": "Navigation",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-070",
+    "acronym": "RNP",
+    "expansion": "Required Navigation Performance",
+    "meaning": "Navigation performance required for airspace",
+    "context": "RNAV",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-071",
+    "acronym": "ROC",
+    "expansion": "Rate of Climb",
+    "meaning": "Vertical speed during climb (ft/min or m/s)",
+    "context": "Performance",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-072",
+    "acronym": "ROD",
+    "expansion": "Rate of Descent",
+    "meaning": "Vertical speed during descent",
+    "context": "Performance",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-073",
+    "acronym": "RTE",
+    "expansion": "Route",
+    "meaning": "Planned flight path",
+    "context": "Flight planning",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-074",
+    "acronym": "RVSM",
+    "expansion": "Reduced Vertical Separation Minimum",
+    "meaning": "Reduced vertical separation above FL290",
+    "context": "Airspace",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-075",
+    "acronym": "RWY",
+    "expansion": "Runway",
+    "meaning": "Defined rectangular area on aerodrome for aircraft",
+    "context": "Aerodrome",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-076",
+    "acronym": "SCT",
+    "expansion": "Sector",
+    "meaning": "Section of airspace or chart",
+    "context": "ATC, charts",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-077",
+    "acronym": "SDA",
+    "expansion": "Stopway Distance Available",
+    "meaning": "Area available for rejected takeoff",
+    "context": "Runway data",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-078",
+    "acronym": "SID",
+    "expansion": "Standard Instrument Departure",
+    "meaning": "Departure route following instrument departure",
+    "context": "Procedures",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-079",
+    "acronym": "SIGMET",
+    "expansion": "Significant Meteorological Information",
+    "meaning": "Warning of hazardous weather affecting flights",
+    "context": "Weather",
+    "references": [{ "source": "IPMA", "doc": "SIGMET", "section": "Format" }]
+  },
+  {
+    "id": "abbr-080",
+    "acronym": "SIL",
+    "expansion": "Runway Occupancy Time",
+    "meaning": "Average time a runway is occupied",
+    "context": "Runway safety",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-081",
+    "acronym": "SRA",
+    "expansion": "Surveillance Radar Approach",
+    "meaning": "Radar approach without precision guidance",
+    "context": "Approaches",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-082",
+    "acronym": "SSR",
+    "expansion": "Secondary Surveillance Radar",
+    "meaning": "Radar interrogating transponders",
+    "context": "Radar",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-083",
+    "acronym": "STAR",
+    "expansion": "Standard Terminal Arrival Route",
+    "meaning": "Arrival route following instrument arrival",
+    "context": "Procedures",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-084",
+    "acronym": "TACAN",
+    "expansion": "Tactical Air Navigation",
+    "meaning": "Military navigation system providing bearing and distance",
+    "context": "Navigation",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-085",
+    "acronym": "TAF",
+    "expansion": "Terminal Aerodrome Forecast",
+    "meaning": "Forecast for aerodrome area",
+    "context": "Weather",
+    "references": [{ "source": "IPMA", "doc": "TAF", "section": "Format" }]
+  },
+  {
+    "id": "abbr-086",
+    "acronym": "TAR",
+    "expansion": "Terminal Area Radar",
+    "meaning": "Radar for approach control",
+    "context": "Radar",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-087",
+    "acronym": "TAX",
+    "expansion": "Taxiing",
+    "meaning": "Movement of aircraft on ground",
+    "context": "Ground movement",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-088",
+    "acronym": "TCAS",
+    "expansion": "Traffic Collision Avoidance System",
+    "meaning": "Airborne collision avoidance system",
+    "context": "Safety",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-089",
+    "acronym": "TMA",
+    "expansion": "Terminal Control Area",
+    "meaning": "Control area around major aerodrome",
+    "context": "Airspace",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-090",
+    "acronym": "TMZ",
+    "expansion": "Transponder Mandatory Zone",
+    "meaning": "Airspace where transponder is required",
+    "context": "Airspace requirements",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-091",
+    "acronym": "TOW",
+    "expansion": "Takeoff Weight",
+    "meaning": "Weight at start of takeoff run",
+    "context": "Performance",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-092",
+    "acronym": "TWR",
+    "expansion": "Tower",
+    "meaning": "Aerodrome control tower",
+    "context": "ATC",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-093",
+    "acronym": "UAV",
+    "expansion": "Unmanned Aerial Vehicle",
+    "meaning": "Drone or remotely piloted aircraft",
+    "context": "Unmanned aircraft",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-094",
+    "acronym": "UTC",
+    "expansion": "Coordinated Universal Time",
+    "meaning": "Universal time reference (Zulu)",
+    "context": "Time",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-095",
+    "acronym": "VA",
+    "expansion": "Heading away from station",
+    "meaning": "Magnetic heading to fly away from station (QDM + 180)",
+    "context": "Navigation",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-096",
+    "acronym": "VAN",
+    "expansion": "Runway Control Van",
+    "meaning": "Vehicle controlling runway operations",
+    "context": "Ground operations",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-097",
+    "acronym": "VAR",
+    "expansion": "Magnetic Variation",
+    "meaning": "Angle between true and magnetic north",
+    "context": "Navigation",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-098",
+    "acronym": "VASIS",
+    "expansion": "Visual Approach Slope Indicator System",
+    "meaning": "Visual glide path indicator",
+    "context": "Approach lighting",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-099",
+    "acronym": "VFR",
+    "expansion": "Visual Flight Rules",
+    "meaning": "Flight conducted by visual reference",
+    "context": "Flight rules",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-100",
+    "acronym": "VMC",
+    "expansion": "Visual Meteorological Conditions",
+    "meaning": "Weather conditions allowing VFR flight",
+    "context": "Weather minimums",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-101",
+    "acronym": "VOR",
+    "expansion": "VHF Omnidirectional Range",
+    "meaning": "Radio navigation aid providing bearing",
+    "context": "Navigation",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-102",
+    "acronym": "VRP",
+    "expansion": "Visual Reporting Point",
+    "meaning": "Point for position reporting in VFR flights",
+    "context": "VFR navigation",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-103",
+    "acronym": "VTOL",
+    "expansion": "Vertical Take-off and Landing",
+    "meaning": "Aircraft capable of vertical takeoff/landing",
+    "context": "Aircraft types",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-104",
+    "acronym": "VZ",
+    "expansion": "Heading towards station",
+    "meaning": "Magnetic heading to fly to station (QDM)",
+    "context": "Navigation",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-105",
+    "acronym": "WAC",
+    "expansion": "World Aeronautical Chart",
+    "meaning": "Small scale chart for navigation",
+    "context": "Charts",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-106",
+    "acronym": "WX",
+    "expansion": "Weather",
+    "meaning": "Meteorological conditions",
+    "context": "Weather",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "abbr-107",
+    "acronym": "RMZ",
+    "expansion": "Radio Mandatory Zone",
+    "meaning": "Airspace where radio communication required",
+    "context": "Airspace requirements",
+    "references": [{ "source": "NAV Portugal", "doc": "ENR 1.2", "section": "Airspace" }]
+  },
+  {
+    "id": "abbr-108",
+    "acronym": "ATZ",
+    "expansion": "Aerodrome Traffic Zone",
+    "meaning": "Airspace around aerodrome for traffic circuits",
+    "context": "Aerodrome traffic",
+    "references": [{ "source": "NAV Portugal", "doc": "ENR 1.2", "section": "ATZ" }]
+  },
+  {
+    "id": "abbr-109",
+    "acronym": "SFER",
+    "expansion": "Special Frequency Reserve",
+    "meaning": "Airspace reserved for specific frequencies",
+    "context": "Airspace",
+    "references": [{ "source": "NAV Portugal", "doc": "ENR 1.2", "section": "Special" }]
+  },
+  {
+    "id": "abbr-110",
+    "acronym": "ADIZ",
+    "expansion": "Air Defense Identification Zone",
+    "meaning": "Airspace requiring identification for security",
+    "context": "Security",
+    "references": [{ "source": "NAV Portugal", "doc": "ENR 1.2", "section": "Airspace" }]
+  }
+]

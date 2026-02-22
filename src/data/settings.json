@@ -1,0 +1,8 @@
+{
+  "base": "LPPR",
+  "aircraft": "DA40",
+  "units": "metric",
+  "homeAerodrome": "LPFR",
+  "magneticVariation": -7,
+  "theme": "light"
+}

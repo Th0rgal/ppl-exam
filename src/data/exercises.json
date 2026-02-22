@@ -1,0 +1,272 @@
+[
+  {
+    "id": "ex-001",
+    "type": "decode",
+    "prompt": "Decode METAR: LPFR 221950Z 19010KT 9999 FEW040 18/12 Q1015",
+    "category": "METAR",
+    "solution": "{\"station\":\"LPFR\",\"time\":\"1950Z\",\"wind_dir\":\"190\",\"wind_speed\":10,\"wind_unit\":\"KT\",\"visibility\":9999,\"clouds\":[{\"type\":\"FEW\",\"height\":40}],\"temp\":18,\"dewpoint\":12,\"qnh\":1015}",
+    "hints": ["Format: STATION TIME WIND VIS CLOUDS TEMP/DEW QNH"],
+    "references": [{ "source": "IPMA", "doc": "METAR", "section": "Format" }]
+  },
+  {
+    "id": "ex-002",
+    "type": "decode",
+    "prompt": "Decode METAR: LPPR 221800Z 27025G35KT 4000 +RA BKN010 OVC025 12/10 Q1009",
+    "category": "METAR",
+    "solution": "{\"station\":\"LPPR\",\"time\":\"1800Z\",\"wind_dir\":\"270\",\"wind_speed\":25,\"gust\":35,\"wind_unit\":\"KT\",\"visibility\":4000,\"weather\":\"+RA\",\"clouds\":[{\"type\":\"BKN\",\"height\":10},{\"type\":\"OVC\",\"height\":25}],\"temp\":12,\"dewpoint\":10,\"qnh\":1009}",
+    "hints": ["G = gust", "+RA = heavy rain", "BKN = broken (5-7 oktas)", "Q1009 = low pressure"],
+    "references": [{ "source": "IPMA", "doc": "METAR", "section": "Format" }]
+  },
+  {
+    "id": "ex-003",
+    "type": "multiple-choice",
+    "prompt": "According to VMC minima in Portugal (Class G), what is the minimum flight visibility?",
+    "category": "VFR Rules",
+    "solution": "5000m",
+    "hints": ["Above 3000ft AMSL or 1000ft AGL in Portugal Class G"],
+    "references": [{ "source": "NAV Portugal", "doc": "ENR 1.2", "section": "VMC" }]
+  },
+  {
+    "id": "ex-004",
+    "type": "multiple-choice",
+    "prompt": "What does QFE represent?",
+    "category": "Altimetry",
+    "solution": "Atmospheric pressure at aerodrome elevation",
+    "hints": ["Set altimeter to QFE to read 0 on runway"],
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "ex-005",
+    "type": "multiple-choice",
+    "prompt": "What does QDM mean?",
+    "category": "Navigation",
+    "solution": "Magnetic bearing from aircraft to station",
+    "hints": ["QDM + 180 = QDR. Heading to steer TO station = QDM."],
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "ex-006",
+    "type": "triage",
+    "prompt": "NOTAM: A0023/26 - LPFR RWY 28 CLSD - From 2026-01-15 08:00 to 2026-01-17 17:00\nImpact on VFR flight to LPFR?",
+    "category": "NOTAM",
+    "solution": "{\"impact\":\"HIGH\",\"action\":\"Use alternate runway\",\"check\":\"Verify runway in use via ATIS/AOPS\"}",
+    "hints": ["Check runway status before flight", "May need to divert"],
+    "references": [{ "source": "NAV Portugal", "doc": "NOTAM", "section": "Briefing" }]
+  },
+  {
+    "id": "ex-007",
+    "type": "multiple-choice",
+    "prompt": "In Portuguese airspace, what is the minimum altitude for VFR flights outside controlled airspace?",
+    "category": "VFR Rules",
+    "solution": "1000ft AGL",
+    "hints": ["Or 3000ft AMSL if more than 1000ft above terrain"],
+    "references": [{ "source": "NAV Portugal", "doc": "ENR 1.2", "section": "VFR" }]
+  },
+  {
+    "id": "ex-008",
+    "type": "flashcard",
+    "prompt": "RMZ",
+    "category": "Abbreviations",
+    "solution": "Radio Mandatory Zone - Airspace where radio communication is required",
+    "hints": ["Usually around aerodromes and in certain airways"],
+    "references": [{ "source": "NAV Portugal", "doc": "ENR 1.2", "section": "Airspace" }]
+  },
+  {
+    "id": "ex-009",
+    "type": "flashcard",
+    "prompt": "TMZ",
+    "category": "Abbreviations",
+    "solution": "Transponder Mandatory Zone - Airspace requiring transponder",
+    "hints": ["Often in TMA and busy airspace"],
+    "references": [{ "source": "NAV Portugal", "doc": "ENR 1.2", "section": "Airspace" }]
+  },
+  {
+    "id": "ex-010",
+    "type": "flashcard",
+    "prompt": "CTR",
+    "category": "Abbreviations",
+    "solution": "Control Zone - Controlled airspace from surface to specified upper limit",
+    "hints": ["Usually Class D - requires clearance"],
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "ex-011",
+    "type": "flashcard",
+    "prompt": "TMA",
+    "category": "Abbreviations",
+    "solution": "Terminal Control Area - Control area around major aerodromes",
+    "hints": ["Usually Class C - requires clearance and transponder"],
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "ex-012",
+    "type": "flashcard",
+    "prompt": "QDR",
+    "category": "Navigation",
+    "solution": "Magnetic bearing FROM station TO aircraft",
+    "hints": ["QDM + 180 = QDR"],
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "ex-013",
+    "type": "flashcard",
+    "prompt": "VOR",
+    "category": "Navigation",
+    "solution": "VHF Omnidirectional Range - radio navigation aid providing bearing to station",
+    "hints": ["Uses VHF frequencies (108-118 MHz)"],
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "ex-014",
+    "type": "flashcard",
+    "prompt": "DME",
+    "category": "Navigation",
+    "solution": "Distance Measuring Equipment - provides slant range distance to station",
+    "hints": ["Usually paired with VOR (VOR/DME)"],
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "ex-015",
+    "type": "flashcard",
+    "prompt": "ILS",
+    "category": "Approaches",
+    "solution": "Instrument Landing System - precision approach aid providing lateral (LOC) and vertical (GS) guidance",
+    "hints": ["Categories I, II, III based on DH/RVR minima"],
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "id": "ex-016",
+    "type": "multiple-choice",
+    "prompt": "What is the circuit altitude at LPFR (Faro) for light aircraft?",
+    "category": "VFR Portugal",
+    "solution": "1000ft AAL",
+    "hints": ["Check VAC for specific aerodrome"],
+    "references": [{ "source": "NAV Portugal", "doc": "AD 2", "section": "VAC" }]
+  },
+  {
+    "id": "ex-017",
+    "type": "multiple-choice",
+    "prompt": "What does PAPI show if you see 3 white and 1 red light?",
+    "category": "Approaches",
+    "solution": "On correct glide path (slightly above)",
+    "hints": ["White = above glide, Red = below. 3W+1R = on path."],
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.3", "section": "PAPI" }]
+  },
+  {
+   ex-018",
+ "id": "    "type": "decode",
+    "prompt": "Decode TAF: LPFR 221500Z 2218/2306 19010KT 9999 FEW030 TX18/2315Z TN12/2306Z",
+    "category": "TAF",
+    "solution": "{\"station\":\"LPFR\",\"issued\":\"1500Z\",\"valid\":\"2218-2306\",\"wind_dir\":\"190\",\"wind_speed\":10,\"visibility\":9999,\"clouds\":[{\"type\":\"FEW\",\"height\":30}],\"temp_max\":{\"value\":18,\"time\":\"2315Z\"},\"temp_min\":{\"value\":12,\"time\":\"2306Z\"}}",
+    "hints": ["TN = temp min, TX = temp max", "FEW030 = few clouds at 3000ft"],
+    "references": [{ "source": "IPMA", "doc": "TAF", "section": "Format" }]
+  },
+  {
+    "id": "ex-019",
+    "type": "triage",
+    "prompt": "NOTAM: B0056/26 - LPMA Airspace: Restricted area R67 active - From 2026-02-10 09:00 to 10:30\nYour VFR flight plan: LPFR-LPMA direct at 3500ft. Impact?",
+    "category": "NOTAM",
+    "solution": "{\"impact\":\"MODERATE\",\"action\":\"Avoid R67 or request clearance\",\"altitude\":\"3500ft may conflict\"}",
+    "hints": ["Check R67 vertical limits. May need to route around."],
+    "references": [{ "source": "NAV Portugal", "doc": "ENR 1.2", "section": "Restricted" }]
+  },
+  {
+    "id": "ex-020",
+    "type": "multiple-choice",
+    "prompt": "What is the VFR cruising level for magnetic course 270° (West)?",
+    "category": "Cruising Levels",
+    "solution": "FL45 (4500ft)",
+    "hints": ["Odd levels (3, 5, 7...) for magnetic course 000-179°", "Even levels (4, 6, 8...) for 180-359°"],
+    "references": [{ "source": "NAV Portugal", "doc": "ENR 1.2", "section": "Cruising Levels" }]
+  },
+  {
+    "id": "ex-021",
+    "type": "multiple-choice",
+    "prompt": "Standard pressure setting (QNH) is:",
+    "category": "Altimetry",
+    "solution": "1013.25 hPa",
+    "hints": ["Used for Flight Levels above transition altitude"],
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Altimetry" }]
+  },
+  {
+    "id": "ex-022",
+    "type": "multiple-choice",
+    "prompt": "What does BECMG in a TAF mean?",
+    "category": "TAF",
+    "solution": "Becoming - gradual change expected at specified time",
+    "hints": ["TEMPO = temporary change", "FM = from", "AT = at"],
+    "references": [{ "source": "IPMA", "doc": "TAF", "section": "Change Indicators" }]
+  },
+  {
+    "id": "ex-023",
+    "type": "flashcard",
+    "prompt": "SIGMET",
+    "category": "Weather",
+    "solution": "Significant Meteorological Information - warning of hazardous weather affecting flights",
+    "hints": ["Issued for thunderstorms, turbulence, icing, volcanic ash"],
+    "references": [{ "source": "IPMA", "doc": "SIGMET", "section": "Format" }]
+  },
+  {
+    "id": "ex-024",
+    "type": "multiple-choice",
+    "prompt": "In Portugal TMA, what class of airspace is it typically?",
+    "category": "Airspace",
+    "solution": "Class C",
+    "hints": ["Requires clearance and transponder Mode C"],
+    "references": [{ "source": "NAV Portugal", "doc": "ENR 1.2", "section": "TMA" }]
+  },
+  {
+    "id": "ex-025",
+    "type": "multiple-choice",
+    "prompt": "What is the transition altitude in Portuguese airspace?",
+    "category": "Altimetry",
+    "solution": "5000ft QNH",
+    "hints": ["Below TA = QNH, Above = Flight Level (1013.25 hPa)"],
+    "references": [{ "source": "NAV Portugal", "doc": "ENR 1.1", "section": "Altimetry" }]
+  },
+  {
+    "id": "ex-026",
+    "type": "performance",
+    "prompt": "DA40: Temperature 25°C, Pressure Altitude 4000ft. Calculate density altitude.",
+    "category": "Performance",
+    "solution": "Approximately 5500ft",
+    "hints": ["Rule of thumb: +1000ft per 10°C above standard", "Standard at 4000ft = 15 - 2*4 = 7°C, 25-7=18°C above, ~1800ft add"],
+    "references": [{ "source": "DA40 POH", "doc": "Performance", "section": "Density Altitude" }]
+  },
+  {
+    "id": "ex-027",
+    "type": "performance",
+    "prompt": "C152: Runway 03, TODA 1500m, TORA 1200m, LDA 1000m. Which is limiting for takeoff?",
+    "category": "Performance",
+    "solution": "LDA if obstacle present, else TORA",
+    "hints": ["TORA is the runway length available for takeoff run"],
+    "references": [{ "source": "NAV Portugal", "doc": "AD", "section": " runway data" }]
+  },
+  {
+    "id": "ex-028",
+    "type": "track-distance",
+    "prompt": "From LPFR (36.98°N, 7.97°W) to LPMA (32.69°N, 16.77°W). Calculate approximate track and distance.",
+    "category": "Navigation",
+    "solution": "Track ~260° (SW), Distance ~270nm",
+    "hints": ["Use E6B or calculate: ~4° lat diff, ~9° lon diff at this latitude"],
+    "references": [{ "source": "NAV Portugal", "doc": "ENR 1.1", "section": "Navigation" }]
+  },
+  {
+    "id": "ex-029",
+    "type": "multiple-choice",
+    "prompt": "What frequency is Lisbon Information (Porto Sector)?",
+    "category": "Portugal VFR",
+    "solution": "124.85 MHz",
+    "hints": ["Check GEN 2.4 for frequencies"],
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.4", "section": "Frequencies" }]
+  },
+  {
+    "id": "ex-030",
+    "type": "multiple-choice",
+    "prompt": "VMC in Portugal Class G at 2000ft AMSL over sea: minimum visibility?",
+    "category": "VFR Rules",
+    "solution": "5000m",
+    "hints": ["Cloud base must be above 500ft AGL"],
+    "references": [{ "source": "NAV Portugal", "doc": "ENR 1.2", "section": "VMC" }]
+  }
+]

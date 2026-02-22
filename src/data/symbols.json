@@ -1,0 +1,403 @@
+[
+  {
+    "id": "sym-001",
+    "name": "Runway",
+    "icon": "🛫",
+    "meaning": "Long straight paved strip for takeoff/landing",
+    "operationalImplication": "Direction determines landing/takeoff orientation. Check VS/TS for runway in use.",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.3", "section": "Aerodrome" }]
+  },
+  {
+    "id": "sym-002",
+    "name": "Taxiway",
+    "icon": "⬨",
+    "meaning": "Path connecting runway to apron/parking",
+    "operationalImplication": "Follow taxi routes. Clear of runway before switching to ground.",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.3", "section": "Aerodrome" }]
+  },
+  {
+    "id": "sym-003",
+    "name": "Apron/Ramp",
+    "icon": "✜",
+    "meaning": "Area for loading/unloading/parking aircraft",
+    "operationalImplication": "Watch for vehicles/pedestrians. Engine running zone restrictions apply.",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.3", "section": "Aerodrome" }]
+  },
+  {
+    "id": "sym-004",
+    "name": "VOR",
+    "icon": "◎",
+    "meaning": "VHF Omnidirectional Range - provides bearing to station",
+    "operationalImplication": "Use for navigation. QDM = heading to steer TO station.",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.3", "section": "Navaids" }]
+  },
+  {
+    "id": "sym-005",
+    "name": "VOR/DME",
+    "icon": "⦿",
+    "meaning": "VOR combined with Distance Measuring Equipment",
+    "operationalImplication": "Provides bearing AND distance to station. Use for navigation and holding.",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.3", "section": "Navaids" }]
+  },
+  {
+    "id": "sym-006",
+    "name": "NDB",
+    "icon": "◉",
+    "meaning": "Non-Directional Beacon - radio beacon for ADF",
+    "operationalImplication": "Use with ADF for homing. Subject to static/interference.",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.3", "section": "Navaids" }]
+  },
+  {
+    "id": "sym-007",
+    "name": "ILS - Localizer",
+    "icon": "⛨",
+    "meaning": "Lateral guidance for precision approach",
+    "operationalImplication": "Flown at MDA/DH. Full scale deflection = outside track.",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.3", "section": "Approaches" }]
+  },
+  {
+    "id": "sym-008",
+    "name": "ILS - Glide Slope",
+    "icon": "⩐",
+    "vertical": "vertical guidance for precision approach",
+    "meaning": "Vertical guidance for precision approach",
+    "operationalImplication": "Follow GS. At DH/MDA - go missed if not in sight.",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.3", "section": "Approaches" }]
+  },
+  {
+    "id": "sym-009",
+    "name": "Marker Beacon - OM/MM/IM",
+    "icon": "✪",
+    "meaning": "Radio markers indicating position on ILS approach",
+    "operationalImplication": "OM = 4-7nm out, MM = ~3500ft, IM = at threshold.",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.3", "section": "Approaches" }]
+  },
+  {
+    "id": "sym-010",
+    "name": "PAPI",
+    "icon": "▪▪▪▪",
+    "meaning": "Precision Approach Path Indicator - 4-light glide path",
+    "operationalImplication": "White = too high, Red = too low. 3 white 1 red = on glide.",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.3", "section": "Approach Lighting" }]
+  },
+  {
+    "id": "sym-011",
+    "name": "VASI",
+    "icon": "▪▪",
+    "meaning": "Visual Approach Slope Indicator - 2 or 3-light system",
+    "operationalImplication": "White = above, Red = below. On glide when both same color.",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.3", "section": "Approach Lighting" }]
+  },
+  {
+    "id": "sym-012",
+    "name": "Control Zone - CTR",
+    "icon": "▣",
+    "meaning": "Controlled airspace from surface to specified altitude",
+    "operationalImplication": "Requires clearance. Class D - two-way comm required.",
+    "references": [{ "source": "NAV Portugal", "doc": "ENR 1.2", "section": "Airspace" }]
+  },
+  {
+    "id": "sym-013",
+    "name": "TMA - Terminal Control Area",
+    "icon": "⬡",
+    "meaning": "Control area around major aerodromes, often layered",
+    "operationalImplication": "Usually Class C - need transponder and clearance.",
+    "references": [{ "source": "NAV Portugal", "doc": "ENR 1.2", "section": "Airspace" }]
+  },
+  {
+    "id": "sym-014",
+    "name": "Airway - AWY",
+    "icon": "━",
+    "meaning": "Designated route between waypoints/navaids",
+    "operationalImplication": "Controlled airspace. FL entry/exit. Requires flight plan.",
+    "references": [{ "source": "NAV Portugal", "doc": "ENR 1.2", "section": "Routes" }]
+  },
+  {
+    "id": "sym-015",
+    "name": "Reporting Point",
+    "icon": "◦",
+    "meaning": "Point where position reports required",
+    "operationalImplication": "Make position report when passing. Use as GPS waypoint.",
+    "references": [{ "source": "NAV Portugal", "doc": "ENR 1.2", "section": "Routes" }]
+  },
+  {
+    "id": "sym-016",
+    "name": "VRP - Visual Reporting Point",
+    "icon": "◇",
+    "meaning": "Ground reference point for VFR position reporting",
+    "operationalImplication": "Use for navigation and position reports. Prominent landmark.",
+    "references": [{ "source": "NAV Portugal", "doc": "ENR 1.2", "section": "VFR" }]
+  },
+  {
+    "id": "sym-017",
+    "name": "ATZ - Aerodrome Traffic Zone",
+    "icon": "⊛",
+    "meaning": "Airspace around aerodrome for circuit traffic",
+    "operationalImplication": "Join circuit at published altitude. Report when entering.",
+    "references": [{ "source": "NAV Portugal", "doc": "ENR 1.2", "section": "ATZ" }]
+  },
+  {
+    "id": "sym-018",
+    "name": "RMZ - Radio Mandatory Zone",
+    "icon": "⧈",
+    "meaning": "Airspace where radio communication mandatory",
+    "operationalImplication": "Establish comm before entering. Listen and squawk.",
+    "references": [{ "source": "NAV Portugal", "doc": "ENR 1.2", "section": "Airspace" }]
+  },
+  {
+    "id": "sym-019",
+    "name": "TMZ - Transponder Mandatory Zone",
+    "icon": "⧉",
+    "meaning": "Airspace where transponder required",
+    "operationalImplication": "Squawk appropriate code. Transponder Mode C required.",
+    "references": [{ "source": "NAV Portugal", "doc": "ENR 1.2", "section": "Airspace" }]
+  },
+  {
+    "id": "sym-020",
+    "name": "Prohibited Area",
+    "icon": "✖",
+    "meaning": "Airspace where flight prohibited",
+    "operationalImplication": "Do NOT enter. Military/government/security restrictions.",
+    "references": [{ "source": "NAV Portugal", "doc": "ENR 1.2", "section": "Special Use" }]
+  },
+  {
+    "id": "sym-021",
+    "name": "Restricted Area",
+    "icon": "▤",
+    "meaning": "Airspace where flight restricted (not prohibited)",
+    "operationalImplication": "May enter if clearance obtained. Hazard may be active.",
+    "references": [{ "source": "NAV Portugal", "doc": "ENR 1.2", "section": "Special Use" }]
+  },
+  {
+    "id": "sym-022",
+    "name": "Danger Area",
+    "icon": "⚠",
+    "meaning": "Airspace containing potential hazard",
+    "operationalImplication": "Exercise caution. May contain military activity/obstacles.",
+    "references": [{ "source": "NAV Portugal", "doc": "ENR 1.2", "section": "Special Use" }]
+  },
+  {
+    "id": "sym-023",
+    "name": "Military Operating Area - MOA",
+    "icon": "▦",
+    "meaning": "Area for military training operations",
+    "operationalImplication": "Civilian flights allowed but caution. Check NOTAM for active times.",
+    "references": [{ "source": "NAV Portugal", "doc": "ENR 1.2", "section": "Special Use" }]
+  },
+  {
+    "id": "sym-024",
+    "name": "Temporary Restricted Area",
+    "icon": "▧",
+    "meaning": "Restricted area active only during specified times",
+    "operationalImplication": "Check activation times in AIP/supplements. May be inactive.",
+    "references": [{ "source": "NAV Portugal", "doc": "ENR 1.2", "section": "Special Use" }]
+  },
+  {
+    "id": "sym-025",
+    "name": "Gliding Area",
+    "icon": "⛱",
+    "meaning": "Area for glider operations",
+    "operationalImplication": "Watch for gliders without transponder. Thermal activity.",
+    "references": [{ "source": "NAV Portugal", "doc": "ENR 1.2", "section": "Special Use" }]
+  },
+  {
+    "id": "sym-026",
+    "name": "Obstacle - Wind Turbine",
+    "icon": "⚡",
+    "meaning": "Wind turbine - tall obstacle with lighting",
+    "operationalImplication": "Check obstacle clearance. May affect circuit/approach.",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.3", "section": "Obstacles" }]
+  },
+  {
+    "id": "sym-027",
+    "name": "Obstacle - Tower/Pylon",
+    "icon": "⛨",
+    "meaning": "Communication tower or pylon",
+    "operationalImplication": "Check height and clearance. May have guy wires.",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.3", "section": "Obstacles" }]
+  },
+  {
+    "id": "sym-028",
+    "name": "High Voltage Line",
+    "icon": "≋",
+    "meaning": "Power lines crossing terrain",
+    "operationalImplication": "Very difficult to see. Maintain safe altitude. Avoid low level.",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.3", "section": "Obstacles" }]
+  },
+  {
+    "id": "sym-029",
+    "name": "Aerodrome - Civil",
+    "icon": "✪",
+    "meaning": "Civil aerodrome - public or private",
+    "operationalImplication": "Check AIP for services, frequencies, runway data.",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.3", "section": "Aerodrome" }]
+  },
+  {
+    "id": "sym-030",
+    "name": "Aerodrome - Military",
+    "icon": "✚",
+    "meaning": "Military aerodrome",
+    "operationalImplication": "Usually restricted. May share with civilian ops. Check procedures.",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.3", "section": "Aerodrome" }]
+  },
+  {
+    "id": "sym-031",
+    "name": "Heliport",
+    "icon": "H",
+    "meaning": "Designated landing area for helicopters",
+    "operationalImplication": "Different circuits/procedures. Check approach paths.",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.3", "section": "Heliports" }]
+  },
+  {
+    "id": "sym-032",
+    "name": "Aerodrome with FATO",
+    "icon": "⛳",
+    "meaning": "Heliport with Final Approach and Takeoff Area",
+    "operationalImplication": "Designated heliport approach areas. PAPI/lighting available.",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.3", "section": "Heliports" }]
+  },
+  {
+    "id": "sym-033",
+    "name": "Water Aerodrome",
+    "icon": "〰",
+    "meaning": "Designated area for seaplane operations",
+    "operationalImplication": "Check water area restrictions. Tides/conditions affect operations.",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.3", "section": "Aerodrome" }]
+  },
+  {
+    "id": "sym-034",
+    "name": "Closed Runway",
+    "icon": "✕ RWY",
+    "meaning": "Runway not available for operations",
+    "operationalImplication": "Do not use. May have equipment/workers on runway.",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.3", "section": "Runway Status" }]
+  },
+  {
+    "id": "sym-035",
+    "name": "Runway Threshold - Displaced",
+    "icon": "→|",
+    "meaning": "Runway threshold displaced from physical beginning",
+    "operationalImplication": "Reduced landing distance available. Check LDA.",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.3", "section": "Runway" }]
+  },
+  {
+    "id": "sym-036",
+    "name": "Touchdown Zone",
+    "icon": "⬛",
+    "meaning": "First portion of runway for touchdown",
+    "operationalImplication": "Aim for this zone. Marked by painted touchdown markers.",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.3", "section": "Runway Markings" }]
+  },
+  {
+    "id": "sym-037",
+    "name": "Runway Edge Lights",
+    "icon": "•—•—•",
+    "meaning": "Runway edge lighting - white (or yellow for calibrated)",
+    "operationalImplication": "White = edge. Yellow = displaced threshold. Green = threshold.",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.3", "section": "Lighting" }]
+  },
+  {
+    "id": "sym-038",
+    "name": "Threshold Lights",
+    "icon": "▮▮▮▮",
+    "meaning": "Green lights at runway threshold",
+    "operationalImplication": "Indicates runway start for landing. Green = go.",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.3", "section": "Lighting" }]
+  },
+  {
+    "id": "sym-039",
+    "name": "Runway End Lights",
+    "icon": "▯▯▯▯",
+    "meaning": "Red lights at runway end",
+    "operationalImplication": "Do not pass beyond. End of usable runway.",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.3", "section": "Lighting" }]
+  },
+  {
+    "id": "sym-040",
+    "name": "REDL - Runway Edge Light",
+    "icon": "edge-lights",
+    "meaning": "Medium intensity runway edge lights",
+    "operationalImplication": "Check AD for operating hours and intensity settings.",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.3", "section": "Lighting" }]
+  },
+  {
+    "id": "sym-041",
+    "name": "TDZL - Touchdown Zone Lights",
+    "icon": "tdz-lights",
+    "meaning": "White lights along touchdown zone",
+    "operationalImplication": "Helps with depth perception in low vis. Part of RCL system.",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.3", "section": "Lighting" }]
+  },
+  {
+    "id": "sym-042",
+    "name": "RCL - Runway Center Line Lights",
+    "icon": "centerline",
+    "meaning": "Center line lights - white (red last 3000ft)",
+    "operationalImplication": "White = safe. Red/white = last 3000ft. Red = last 1000ft.",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.3", "section": "Lighting" }]
+  },
+  {
+    "id": "sym-043",
+    "name": "WDI - Wind Direction Indicator",
+    "icon": "wind",
+    "meaning": "Wind sock or wind tee",
+    "operationalImplication": "Check direction and intensity. Positioned at takeoff end if possible.",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.3", "section": "Markings" }]
+  },
+  {
+    "id": "sym-044",
+    "name": "PAPIs - PAPI System",
+    "icon": "paperi",
+    "meaning": "Precision Approach Path Indicator - 4 units",
+    "operationalImplication": "L = left, R = right side. Standard 3° glide path.",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.3", "section": "Approach Lighting" }]
+  },
+  {
+    "id": "sym-045",
+    "name": "T-VASIS",
+    "icon": "t-vasis",
+    "meaning": "T-shaped Visual Approach Slope Indicator",
+    "operationalImplication": "On glide = light bar centered. Above/below = asymmetric pattern.",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.3", "section": "Approach Lighting" }]
+  },
+  {
+    "id": "sym-046",
+    "name": "Precision Approach - CAT I/II/III",
+    "icon": "ils-cat",
+    "meaning": "ILS Category indicator",
+    "operationalImplication": "CAT I = 200ft DH/550m RVR. CAT II = 100ft/300m. CAT III = below 100ft/0m.",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.3", "section": "ILS Categories" }]
+  },
+  {
+    "id": "sym-047",
+    "name": "MIL SIG",
+    "icon": "mil-sig",
+    "meaning": "Military signal area",
+    "operationalImplication": "Ground-to-air signals. Check meaning for joint operations.",
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.3", "section": "Signals" }]
+  },
+  {
+    "id": "sym-048",
+    "name": "VFR Route",
+    "icon": "vfr-route",
+    "meaning": "Published VFR route (color-coded)",
+    "operationalImplication": "Follow route for easy navigation. Check altitudes per direction.",
+    "references": [{ "source": "NAV Portugal", "doc": "ENR 1.2", "section": "VFR Routes" }]
+  },
+  {
+    "id": "sym-049",
+    "name": "VRP with Frequency",
+    "icon": "vrp-freq",
+    "meaning": "Visual Reporting Point with published frequency",
+    "operationalImplication": "Can request traffic info from AFIS on frequency.",
+    "references": [{ "source": "NAV Portugal", "doc": "ENR 1.2", "section": "VFR" }]
+  },
+  {
+    "id": "sym-050",
+    "name": "FIR Boundary",
+    "icon": "fir",
+    "meaning": "Flight Information Region boundary",
+    "operationalImplication": "Crossing into new FIR = different ATS provider. Check frequencies.",
+    "references": [{ "source": "NAV Portugal", "doc": "ENR 1.2", "section": "FIR" }]
+  }
+]

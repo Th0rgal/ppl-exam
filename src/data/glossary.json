@@ -1,0 +1,212 @@
+[
+  {
+    "term": "RMZ",
+    "definition": "Radio Mandatory Zone - Airspace where continuous two-way radio communication is required",
+    "category": "Airspace",
+    "related": ["CTR", "TMA", "TMZ"],
+    "references": [{ "source": "NAV Portugal", "doc": "ENR 1.2", "section": "Airspace" }]
+  },
+  {
+    "term": "TMZ",
+    "definition": "Transponder Mandatory Zone - Airspace where SSR transponder is required",
+    "category": "Airspace",
+    "related": ["RMZ", "CTR", "TMA"],
+    "references": [{ "source": "NAV Portugal", "doc": "ENR 1.2", "section": "Airspace" }]
+  },
+  {
+    "term": "CTR",
+    "definition": "Control Zone - Controlled airspace extending from surface to upper limit, normally class D",
+    "category": "Airspace",
+    "related": ["TMA", "ATZ", "Class D"],
+    "references": [{ "source": "NAV Portugal", "doc": "ENR 1.2", "section": "Airspace" }]
+  },
+  {
+    "term": "TMA",
+    "definition": "Terminal Control Area - Control area normally class C around major aerodromes",
+    "category": "Airspace",
+    "related": ["CTR", "CTA", "Class C"],
+    "references": [{ "source": "NAV Portugal", "doc": "ENR 1.2", "section": "TMA" }]
+  },
+  {
+    "term": "QDM",
+    "definition": "Magnetic bearing from aircraft to station - heading to steer TO station",
+    "category": "Navigation",
+    "related": ["QDR", "QDR", "VAR"],
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "term": "QDR",
+    "definition": "Magnetic bearing FROM station to aircraft",
+    "category": "Navigation",
+    "related": ["QDM", "QTE"],
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "term": "VOR",
+    "definition": "VHF Omnidirectional Range - ground radio station providing bearing information",
+    "category": "Navigation",
+    "related": ["DME", "NDB", "ADF"],
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "term": "DME",
+    "definition": "Distance Measuring Equipment - provides slant range distance to a ground station",
+    "category": "Navigation",
+    "related": ["VOR", "TACAN"],
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "term": "NDB",
+    "definition": "Non-Directional Beacon - LF/MF radio beacon for ADF navigation",
+    "category": "Navigation",
+    "related": ["ADF", "VOR"],
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "term": "ADF",
+    "definition": "Automatic Direction Finder - aircraft instrument to receive NDB signals",
+    "category": "Navigation",
+    "related": ["NDB"],
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "term": "ILS",
+    "definition": "Instrument Landing System - precision approach aid with localizer and glide path",
+    "category": "Approaches",
+    "related": ["LOC", "GP", "MDA", "DH"],
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "term": "LOC",
+    "definition": "Localizer - component of ILS providing lateral guidance",
+    "category": "Approaches",
+    "related": ["ILS", "GP"],
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "term": "GP/GS",
+    "definition": "Glide Path / Glide Slope - vertical guidance component of ILS",
+    "category": "Approaches",
+    "related": ["ILS", "LOC"],
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "term": "PAPI",
+    "definition": "Precision Approach Path Indicator - 4-light visual glide path indicator",
+    "category": "Approaches",
+    "related": ["VASI", "ILS"],
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "term": "VASI",
+    "definition": "Visual Approach Slope Indicator - 2 or 3-light visual approach aid",
+    "category": "Approaches",
+    "related": ["PAPI"],
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "term": "QFE",
+    "definition": "Atmospheric pressure at aerodrome elevation - altimeter reads 0 on runway",
+    "category": "Altimetry",
+    "related": ["QNH", "QNE", "FL"],
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "term": "QNH",
+    "definition": "Altimeter setting to give aerodrome elevation - reads altitude on ground",
+    "category": "Altimetry",
+    "related": ["QFE", "QNE", "PA"],
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "term": "QNE",
+    "definition": "Standard pressure setting 1013.25 hPa - used for flight levels",
+    "category": "Altimetry",
+    "related": ["QNH", "FL", "PA"],
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "term": "FL",
+    "definition": "Flight Level - altitude when altimeter set to 1013.25 hPa",
+    "category": "Altimetry",
+    "related": ["QNE", "PA", "TA"],
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "term": "TA",
+    "definition": "Transition Altitude - altitude above which flight level is used",
+    "category": "Altimetry",
+    "related": ["TL", "FL", "QNH"],
+    "references": [{ "source": "NAV Portugal", "doc": "ENR 1.1", "section": "Altimetry" }]
+  },
+  {
+    "term": "TL",
+    "definition": "Transition Level - lowest flight level usable with QNH",
+    "category": "Altimetry",
+    "related": ["TA", "FL", "QNH"],
+    "references": [{ "source": "NAV Portugal", "doc": "ENR 1.1", "section": "Altimetry" }]
+  },
+  {
+    "term": "METAR",
+    "definition": "Meteorological Aerodrome Report - routine weather report",
+    "category": "Weather",
+    "related": ["TAF", "SPECI"],
+    "references": [{ "source": "IPMA", "doc": "METAR", "section": "Format" }]
+  },
+  {
+    "term": "TAF",
+    "definition": "Terminal Aerodrome Forecast - forecast for aerodrome area",
+    "category": "Weather",
+    "related": ["METAR", "SPECI"],
+    "references": [{ "source": "IPMA", "doc": "TAF", "section": "Format" }]
+  },
+  {
+    "term": "SIGMET",
+    "definition": "Significant Meteorological Information - warning of hazardous weather",
+    "category": "Weather",
+    "related": ["AIRMET", "METAR"],
+    "references": [{ "source": "IPMA", "doc": "SIGMET", "section": "Format" }]
+  },
+  {
+    "term": "NOTAM",
+    "definition": "Notice to Air Missions - information about changes to facilities/services",
+    "category": "Briefing",
+    "related": ["AIP", "PIB"],
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "term": "FIR",
+    "definition": "Flight Information Region - airspace providing flight information service",
+    "category": "Airspace",
+    "related": ["FSS", "FIC"],
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "term": "ATZ",
+    "definition": "Aerodrome Traffic Zone - airspace around aerodrome for traffic circuits",
+    "category": "Airspace",
+    "related": ["CTR", "Circuit"],
+    "references": [{ "source": "NAV Portugal", "doc": "ENR 1.2", "section": "ATZ" }]
+  },
+  {
+    "term": "SID",
+    "definition": "Standard Instrument Departure - coded departure route",
+    "category": "Procedures",
+    "related": ["STAR", "IAP"],
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "term": "STAR",
+    "definition": "Standard Terminal Arrival Route - coded arrival route",
+    "category": "Procedures",
+    "related": ["SID", "IAP"],
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  },
+  {
+    "term": "IAP",
+    "definition": "Instrument Approach Procedure - approach using navigation aids",
+    "category": "Procedures",
+    "related": ["SID", "STAR", "ILS"],
+    "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
+  }
+]
