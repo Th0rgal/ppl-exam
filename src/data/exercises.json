@@ -153,8 +153,8 @@
     "references": [{ "source": "NAV Portugal", "doc": "GEN 2.3", "section": "PAPI" }]
   },
   {
-   ex-018",
- "id": "    "type": "decode",
+    "id": "ex-018",
+    "type": "decode",
     "prompt": "Decode TAF: LPFR 221500Z 2218/2306 19010KT 9999 FEW030 TX18/2315Z TN12/2306Z",
     "category": "TAF",
     "solution": "{\"station\":\"LPFR\",\"issued\":\"1500Z\",\"valid\":\"2218-2306\",\"wind_dir\":\"190\",\"wind_speed\":10,\"visibility\":9999,\"clouds\":[{\"type\":\"FEW\",\"height\":30}],\"temp_max\":{\"value\":18,\"time\":\"2315Z\"},\"temp_min\":{\"value\":12,\"time\":\"2306Z\"}}",

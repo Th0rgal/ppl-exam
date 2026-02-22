@@ -7,7 +7,8 @@ import {
   ClipboardCheck, 
   Library, 
   Settings,
-  Plane
+  Plane,
+  List
 } from 'lucide-react';
 
 const navItems = [
@@ -16,6 +17,8 @@ const navItems = [
   { href: '/decode', icon: Calculator, label: 'Decode' },
   { href: '/drills', icon: Dumbbell, label: 'Drills' },
   { href: '/tests', icon: ClipboardCheck, label: 'Tests' },
+  { href: '/glossary', icon: List, label: 'Glossary' },
+  { href: '/performance', icon: Plane, label: 'Performance' },
   { href: '/library', icon: Library, label: 'Library' },
   { href: '/settings', icon: Settings, label: 'Settings' },
 ];
