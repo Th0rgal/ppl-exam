@@ -138,6 +138,48 @@ Edit `src/data/symbols.json`:
 }
 ```
 
+### Adding PDFs to Library
+
+The Library page (`/library`) contains links to official PDFs. To add new documents:
+
+1. **Option A: External links** (recommended for copyright)
+
+Add to `src/app/library/page.tsx`:
+```tsx
+{
+  title: 'GEN 2.2 - Abbreviations',
+  url: 'https://ais.nav.pt/aip/',
+  description: 'Official AIP abbreviations',
+  source: 'NAV Portugal'
+}
+```
+
+2. **Option B: Local PDFs** (for offline use)
+
+Place PDF in `public/pdfs/`:
+```bash
+cp my-document.pdf public/pdfs/
+```
+
+Then add to library page:
+```tsx
+{
+  title: 'My Document',
+  url: '/pdfs/my-document.pdf',
+  description: 'Description',
+  source: 'Source Name'
+}
+```
+
+**Important:** Only add:
+- Official PDFs from NAV Portugal / IPMA
+- Your own original content
+- Documents you have rights to distribute
+
+Do NOT add:
+- Commercial exam banks (AviationExam, Aircademy, etc.)
+- Copyrighted materials without permission
+
 ## Content Guidelines
 
 All content should reference official sources:
