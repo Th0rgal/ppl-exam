@@ -147,7 +147,7 @@
     "id": "abbr-019",
     "acronym": "HGT",
     "expansion": "Height",
-    "vertical distance above a reference point (usually terrain)",
+    "meaning": "Vertical distance above a reference point (usually terrain)",
     "context": "Altimetry",
     "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
   },
