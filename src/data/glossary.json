@@ -31,7 +31,7 @@
     "term": "QDM",
     "definition": "Magnetic bearing from aircraft to station - heading to steer TO station",
     "category": "Navigation",
-    "related": ["QDR", "QDR", "VAR"],
+    "related": ["QDR", "QTE", "VAR"],
     "references": [{ "source": "NAV Portugal", "doc": "GEN 2.2", "section": "Abbrev" }]
   },
   {

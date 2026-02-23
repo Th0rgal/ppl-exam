@@ -12,26 +12,26 @@ import {
 
 const priorities = [
   {
-    tier: 'Tier 1 - Critical (60% of exam)',
+    tier: 'Focus 1 - Core Operational Knowledge',
     topics: [
-      { name: 'VMC Minima & Flight Rules', link: '/learn/vfr-portugal', weight: '25%' },
-      { name: 'METAR/TAF Decoding', link: '/learn/metar', weight: '20%' },
-      { name: 'Airspace (CTR, TMA, RMZ, TMZ)', link: '/learn/vfr-portugal', weight: '15%' },
+      { name: 'VMC Minima & Flight Rules', link: '/learn/vfr-portugal', weight: 'Priority A' },
+      { name: 'METAR/TAF Decoding', link: '/learn/metar', weight: 'Priority A' },
+      { name: 'Airspace (CTR, TMA, RMZ, TMZ)', link: '/learn/vfr-portugal', weight: 'Priority A' },
     ],
   },
   {
-    tier: 'Tier 2 - High Impact (25% of exam)',
+    tier: 'Focus 2 - Fast Scoring Items',
     topics: [
-      { name: 'Chart Symbols (GEN 2.3)', link: '/learn/symbols', weight: '10%' },
-      { name: 'Abbreviations (GEN 2.2)', link: '/learn/abbrev', weight: '10%' },
-      { name: 'NOTAM Analysis', link: '/learn/notam', weight: '5%' },
+      { name: 'Chart Symbols (GEN 2.3)', link: '/learn/symbols', weight: 'Priority B' },
+      { name: 'Abbreviations (GEN 2.2)', link: '/learn/abbrev', weight: 'Priority B' },
+      { name: 'Timed Mixed Quiz', link: '/tests', weight: 'Priority B' },
     ],
   },
   {
-    tier: 'Tier 3 - Important (15% of exam)',
+    tier: 'Focus 3 - Consolidation',
     topics: [
-      { name: 'Performance & CG', link: '/learn/performance', weight: '8%' },
-      { name: 'Routes & Airway', link: '/learn/routes', weight: '7%' },
+      { name: 'Error Review from Daily Drill', link: '/drills/daily', weight: 'Priority C' },
+      { name: 'Exam Simulation + Debrief', link: '/tests', weight: 'Priority C' },
     ],
   },
 ];
@@ -54,7 +54,7 @@ export default function StudyPlan80Page() {
       <div className="card mb-4" style={{ background: 'linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%)', color: 'white' }}>
         <h3 style={{ marginBottom: '0.5rem' }}>80/20 Principle</h3>
         <p style={{ opacity: 0.9 }}>
-          80% of exam questions come from 20% of the content. Master these areas first.
+          Start with the smallest set of topics that drive most operational questions, then reinforce using spaced retrieval.
         </p>
       </div>
 
@@ -100,7 +100,7 @@ export default function StudyPlan80Page() {
             <div key={idx} className="module-card">
               <div className="flex items-center justify-between mb-2">
                 <span style={{ fontWeight: 600 }}>{day.focus}</span>
-                <span className="tag tag-blue">{day.time}</span>
+                <span className="tag">{day.time}</span>
               </div>
               <p className="text-sm text-muted">{day.drills}</p>
             </div>

@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import AppLayout from '../AppLayout';
 import { 
   Settings as SettingsIcon, 
@@ -35,6 +35,8 @@ export default function SettingsPage() {
     theme: 'light',
     dailyGoal: 25,
   });
+  const [saveMessage, setSaveMessage] = useState('');
+  const saveMessageTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     const saved = localStorage.getItem('ppl-settings');
@@ -50,8 +52,20 @@ export default function SettingsPage() {
 
   const handleSave = () => {
     localStorage.setItem('ppl-settings', JSON.stringify(settings));
-    alert('Settings saved!');
+    setSaveMessage('Settings saved.');
+    if (saveMessageTimeoutRef.current) {
+      clearTimeout(saveMessageTimeoutRef.current);
+    }
+    saveMessageTimeoutRef.current = setTimeout(() => setSaveMessage(''), 2000);
   };
+
+  useEffect(() => {
+    return () => {
+      if (saveMessageTimeoutRef.current) {
+        clearTimeout(saveMessageTimeoutRef.current);
+      }
+    };
+  }, []);
 
   const handleExport = () => {
     const data = {
@@ -65,6 +79,7 @@ export default function SettingsPage() {
     a.href = url;
     a.download = 'ppl-exam-export.json';
     a.click();
+    URL.revokeObjectURL(url);
   };
 
   return (
@@ -221,30 +236,25 @@ export default function SettingsPage() {
           <button className="btn btn-secondary" onClick={handleExport}>
             <Download size={16} /> Export Data
           </button>
-          <button className="btn btn-secondary">
-            <Upload size={16} /> Import Data
+          <button className="btn btn-secondary" disabled title="Planned feature">
+            <Upload size={16} /> Import Data (Soon)
           </button>
-          <button className="btn btn-error">
-            <Trash2 size={16} /> Clear Progress
+          <button className="btn btn-error" disabled title="Planned feature">
+            <Trash2 size={16} /> Clear Progress (Soon)
           </button>
         </div>
         
         <p className="text-sm text-muted mt-4">
-          Export includes: progress, errors, settings. Does not include uploaded documents.
+          Export includes settings and local progress. Import and reset are intentionally hidden until fully implemented.
         </p>
-      </div>
-
-      <div className="card mt-4">
-        <h3 className="card-title mb-4">Anki Export</h3>
-        <p className="text-muted mb-4">
-          Generate an Anki deck from your wrong answers and weak areas
-        </p>
-        <button className="btn btn-primary">
-          <Download size={16} /> Export to Anki (.apkg)
-        </button>
       </div>
 
       <div className="flex justify-end mt-4">
+        {saveMessage && (
+          <p className="text-sm text-muted" style={{ marginRight: '1rem', alignSelf: 'center' }}>
+            {saveMessage}
+          </p>
+        )}
         <button className="btn btn-primary" onClick={handleSave}>
           Save Settings
         </button>

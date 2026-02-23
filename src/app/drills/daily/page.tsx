@@ -1,10 +1,9 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import AppLayout from '../../AppLayout';
-import { Play, Clock, Check, X, RotateCcw, ChevronRight, Lightbulb } from 'lucide-react';
+import { Play, Clock, Check, X, RotateCcw, Lightbulb } from 'lucide-react';
 import Link from 'next/link';
-import exercises from '../../../data/exercises.json';
 
 interface DrillExercise {
   id: string;
@@ -27,13 +26,16 @@ const drillExercises: DrillExercise[] = [
   { id: 'ex-009', type: 'flashcard', prompt: 'VOR', solution: 'VHF Omnidirectional Range - radio navigation aid providing bearing', category: 'Navigation', hints: ['108-118 MHz'] },
   { id: 'ex-010', type: 'flashcard', prompt: 'DME', solution: 'Distance Measuring Equipment - slant range distance to station', category: 'Navigation', hints: ['Usually paired with VOR'] },
   { id: 'ex-011', type: 'flashcard', prompt: 'ILS', solution: 'Instrument Landing System - precision approach aid', category: 'Approaches', hints: ['LOC + GP'] },
-  { id: 'ex-012', type: 'flashcard', prompt: 'PAPI', solution: 'Precision Approach Path Indicator - 4-light glide path', category: 'Approaches', hints: ['3W+1R = on path'] },
+  { id: 'ex-012', type: 'flashcard', prompt: 'PAPI', solution: 'Precision Approach Path Indicator - 4-light glide path', category: 'Approaches', hints: ['2W + 2R = on path'] },
   { id: 'ex-013', type: 'flashcard', prompt: 'VASI', solution: 'Visual Approach Slope Indicator - 2 or 3-light system', category: 'Approaches', hints: ['White = high, Red = low'] },
   { id: 'ex-014', type: 'flashcard', prompt: 'NDB', solution: 'Non-Directional Beacon - LF/MF radio beacon', category: 'Navigation', hints: ['For ADF'] },
   { id: 'ex-015', type: 'flashcard', prompt: 'METAR', solution: 'Meteorological Aerodrome Report - routine weather report', category: 'Weather', hints: ['Routine observation'] },
   { id: 'ex-016', type: 'decode', prompt: 'LPFR 221950Z 19010KT 9999 FEW040 18/12 Q1015', solution: 'LPFR:190°@10kt,10km+,FEW4000ft,18°/12°,Q1015', category: 'METAR', hints: ['wind/vis/clouds/temp/qnh'] },
   { id: 'ex-017', type: 'decode', prompt: 'LPPR 221800Z 27025G35KT 4000 +RA BKN010 OVC025 12/10 Q1009', solution: 'LPPR:270°@25g35kt,4km,+RA,BKN1000ft,OVC2500ft,12°/10°,Q1009', category: 'METAR', hints: ['gust + rain + low ceiling'] },
 ];
+
+const DAILY_COUNT = 15;
+const WEAK_PROMPTS_KEY = 'ppl-weak-prompts';
 
 function shuffleArray<T>(array: T[]): T[] {
   const shuffled = [...array];
@@ -44,6 +46,37 @@ function shuffleArray<T>(array: T[]): T[] {
   return shuffled;
 }
 
+function buildDailyExercises(): DrillExercise[] {
+  const shuffled = shuffleArray(drillExercises);
+
+  if (typeof window === 'undefined') {
+    return shuffled.slice(0, DAILY_COUNT);
+  }
+
+  try {
+    const weakPromptsRaw = localStorage.getItem(WEAK_PROMPTS_KEY);
+    if (!weakPromptsRaw) return shuffled.slice(0, DAILY_COUNT);
+
+    const weakPrompts = JSON.parse(weakPromptsRaw);
+    if (!Array.isArray(weakPrompts) || weakPrompts.length === 0) {
+      return shuffled.slice(0, DAILY_COUNT);
+    }
+
+    const uniqueWeakPrompts = Array.from(new Set(weakPrompts)) as string[];
+    const weakExercises = shuffleArray(
+      uniqueWeakPrompts
+        .map((prompt) => drillExercises.find((exercise) => exercise.prompt === prompt))
+        .filter((exercise): exercise is DrillExercise => Boolean(exercise))
+    ).slice(0, 3);
+
+    const weakIds = new Set(weakExercises.map((exercise) => exercise.id));
+    const freshPool = shuffled.filter((exercise) => !weakIds.has(exercise.id));
+    return [...weakExercises, ...freshPool].slice(0, DAILY_COUNT);
+  } catch {
+    return shuffled.slice(0, DAILY_COUNT);
+  }
+}
+
 export default function DailyDrillPage() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showAnswer, setShowAnswer] = useState(false);
@@ -52,8 +85,11 @@ export default function DailyDrillPage() {
   const [started, setStarted] = useState(false);
   const [timeLeft, setTimeLeft] = useState(25 * 60);
   const [completed, setCompleted] = useState<number[]>([]);
+  const [incorrect, setIncorrect] = useState<number[]>([]);
+  const [isAdvancing, setIsAdvancing] = useState(false);
+  const advanceTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const [dailyExercises] = useState(() => shuffleArray(drillExercises).slice(0, 15));
+  const [dailyExercises] = useState(() => buildDailyExercises());
 
   const handleStart = useCallback(() => {
     setStarted(true);
@@ -61,10 +97,27 @@ export default function DailyDrillPage() {
   }, [dailyExercises.length]);
 
   const handleAnswer = useCallback((correct: boolean) => {
+    if (isAdvancing) return;
+    setIsAdvancing(true);
     if (correct) setScore(s => s + 1);
+    if (!correct) {
+      setIncorrect(prev => [...prev, currentIndex]);
+      try {
+        const currentPrompt = dailyExercises[currentIndex]?.prompt;
+        if (currentPrompt) {
+          const existing = localStorage.getItem(WEAK_PROMPTS_KEY);
+          const parsed = existing ? JSON.parse(existing) : [];
+          const weakPrompts = Array.isArray(parsed) ? parsed : [];
+          weakPrompts.push(currentPrompt);
+          localStorage.setItem(WEAK_PROMPTS_KEY, JSON.stringify(weakPrompts.slice(-50)));
+        }
+      } catch {
+        // Ignore storage failures so drills remain usable in restricted environments.
+      }
+    }
     setCompleted(prev => [...prev, currentIndex]);
     
-    setTimeout(() => {
+    advanceTimeoutRef.current = setTimeout(() => {
       setCurrentIndex(idx => {
         if (idx < dailyExercises.length - 1) {
           return idx + 1;
@@ -73,8 +126,17 @@ export default function DailyDrillPage() {
         return idx;
       });
       setShowAnswer(false);
+      setIsAdvancing(false);
     }, 500);
-  }, [currentIndex, dailyExercises.length]);
+  }, [currentIndex, dailyExercises.length, isAdvancing]);
+
+  useEffect(() => {
+    return () => {
+      if (advanceTimeoutRef.current) {
+        clearTimeout(advanceTimeoutRef.current);
+      }
+    };
+  }, []);
 
   useEffect(() => {
     if (!started || completed.includes(-1)) return;
@@ -200,7 +262,7 @@ export default function DailyDrillPage() {
         {dailyExercises.map((_, idx) => (
           <div 
             key={idx} 
-            className={`drill-dot ${idx === currentIndex ? 'current' : ''} ${completed.includes(idx) ? 'completed' : ''}`}
+            className={`drill-dot ${idx === currentIndex ? 'current' : ''} ${completed.includes(idx) && !incorrect.includes(idx) ? 'completed' : ''} ${incorrect.includes(idx) ? 'incorrect' : ''}`}
           />
         ))}
       </div>
@@ -242,6 +304,7 @@ export default function DailyDrillPage() {
               <button 
                 className="btn btn-secondary" 
                 onClick={() => handleAnswer(false)}
+                disabled={isAdvancing}
                 style={{ flex: 1 }}
               >
                 <X size={20} /> Wrong
@@ -249,6 +312,7 @@ export default function DailyDrillPage() {
               <button 
                 className="btn btn-primary" 
                 onClick={() => handleAnswer(true)}
+                disabled={isAdvancing}
                 style={{ flex: 1 }}
               >
                 <Check size={20} /> Got it

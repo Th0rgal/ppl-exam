@@ -1,64 +1,68 @@
 'use client';
 
-import { useState } from 'react';
 import AppLayout from '../AppLayout';
 import Link from 'next/link';
 import { 
-  Dumbbell, 
   Clock, 
   Target, 
   Play, 
   ChevronRight,
   Brain,
   MapPin,
-  Calculator
+  Calculator,
+  BookOpen
 } from 'lucide-react';
 
 const drills = [
   {
-    id: 'symbols',
+    id: 'daily-symbols',
     title: '15 Symbols in 10 min',
     description: 'Identify chart symbols from GEN 2.3',
     icon: MapPin,
     duration: 10,
-    type: 'flashcard',
+    type: 'daily',
     count: 15,
+    href: '/drills/daily',
   },
   {
-    id: 'weather',
+    id: 'daily-weather',
     title: '1 METAR + 1 TAF in 8 min',
     description: 'Decode weather reports and check VMC',
     icon: Target,
     duration: 8,
-    type: 'decode',
+    type: 'daily',
     count: 2,
+    href: '/drills/daily',
   },
   {
-    id: 'notam',
-    title: 'NOTAM Triage',
-    description: 'Quickly assess NOTAM impact on flight',
-    icon: Dumbbell,
-    duration: 10,
-    type: 'triage',
-    count: 5,
-  },
-  {
-    id: 'abbrev',
+    id: 'daily-abbrev',
     title: '25 Abbreviations',
     description: 'Test knowledge of AIP abbreviations',
     icon: Brain,
-    duration: 15,
-    type: 'flashcard',
+    duration: 12,
+    type: 'daily',
     count: 25,
+    href: '/drills/daily',
   },
   {
-    id: 'track',
-    title: 'Track & Distance',
-    description: 'Calculate routes with E6B',
+    id: 'decode',
+    title: 'METAR/TAF Decode Tool',
+    description: 'Practice with real Portuguese weather strings',
     icon: Calculator,
+    duration: 8,
+    type: 'decode',
+    count: 3,
+    href: '/decode',
+  },
+  {
+    id: 'exam',
+    title: 'Exam Simulation (10 Q)',
+    description: 'Timed mixed-topic exam practice',
+    icon: BookOpen,
     duration: 15,
-    type: 'track',
-    count: 5,
+    type: 'exam',
+    count: 10,
+    href: '/tests',
   },
 ];
 
@@ -125,7 +129,7 @@ export default function DrillsPage() {
                   <Clock size={14} style={{ marginRight: '0.25rem', verticalAlign: 'middle' }} />
                   {drill.duration} min
                 </div>
-                <Link href={`/drills/${drill.id}`} className="btn btn-secondary">
+                <Link href={drill.href} className="btn btn-secondary">
                   <Play size={16} /> Start
                 </Link>
               </div>
@@ -139,20 +143,20 @@ export default function DrillsPage() {
         <div className="flex flex-col gap-2">
           <div className="flex items-center justify-between" style={{ padding: '0.75rem', background: 'var(--bg-secondary)', borderRadius: '0.5rem' }}>
             <span>QDM vs QDR confusion</span>
-            <Link href="/drills/qdm" className="btn btn-secondary btn-sm">
-              Practice <ChevronRight size={14} />
+            <Link href="/learn/abbrev" className="btn btn-secondary btn-sm">
+              Review <ChevronRight size={14} />
             </Link>
           </div>
           <div className="flex items-center justify-between" style={{ padding: '0.75rem', background: 'var(--bg-secondary)', borderRadius: '0.5rem' }}>
             <span>ILS Categories (CAT I/II/III)</span>
-            <Link href="/drills/ils" className="btn btn-secondary btn-sm">
-              Practice <ChevronRight size={14} />
+            <Link href="/learn/symbols" className="btn btn-secondary btn-sm">
+              Review <ChevronRight size={14} />
             </Link>
           </div>
           <div className="flex items-center justify-between" style={{ padding: '0.75rem', background: 'var(--bg-secondary)', borderRadius: '0.5rem' }}>
             <span>Airspace boundaries</span>
-            <Link href="/drills/airspace" className="btn btn-secondary btn-sm">
-              Practice <ChevronRight size={14} />
+            <Link href="/learn/vfr-portugal" className="btn btn-secondary btn-sm">
+              Review <ChevronRight size={14} />
             </Link>
           </div>
         </div>

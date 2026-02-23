@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import AppLayout from '../AppLayout';
 import { 
   ClipboardCheck, 
@@ -74,8 +74,8 @@ const sampleQuestions: Question[] = [
       'On correct glide path',
       'Unable to determine'
     ],
-    correct: 2,
-    explanation: '3 white + 1 red = on the correct 3° glide path. All white = too high, all red = too low.',
+    correct: 0,
+    explanation: '3 white + 1 red means slightly high. On glide path is 2 white + 2 red. All white = too high, all red = too low.',
     reference: 'NAV Portugal GEN 2.3'
   },
   {
@@ -135,12 +135,16 @@ const sampleQuestions: Question[] = [
   }
 ];
 
+const EXAM_DURATION_SECONDS = 15 * 60;
+
 export default function TestsPage() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [showResult, setShowResult] = useState(false);
   const [answers, setAnswers] = useState<(number | null)[]>(new Array(sampleQuestions.length).fill(null));
   const [examStarted, setExamStarted] = useState(false);
+  const [examFinished, setExamFinished] = useState(false);
+  const [timeLeft, setTimeLeft] = useState(EXAM_DURATION_SECONDS);
 
   const handleAnswer = (index: number) => {
     if (showResult) return;
@@ -151,6 +155,7 @@ export default function TestsPage() {
   };
 
   const handleCheck = () => {
+    if (selectedAnswer === null) return;
     setShowResult(true);
   };
 
@@ -175,11 +180,35 @@ export default function TestsPage() {
     setSelectedAnswer(null);
     setShowResult(false);
     setAnswers(new Array(sampleQuestions.length).fill(null));
+    setExamFinished(false);
+    setTimeLeft(EXAM_DURATION_SECONDS);
   };
+
+  useEffect(() => {
+    if (!examStarted || examFinished) return;
+
+    const timer = setInterval(() => {
+      setTimeLeft((previous) => {
+        if (previous <= 1) {
+          clearInterval(timer);
+          setExamFinished(true);
+          setShowResult(false);
+          return 0;
+        }
+        return previous - 1;
+      });
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, [examStarted, examFinished]);
 
   const score = answers.reduce((acc: number, ans, idx) => {
     return acc + (ans === sampleQuestions[idx].correct ? 1 : 0);
   }, 0);
+  const answeredCount = answers.filter((answer) => answer !== null).length;
+  const scorePercent = Math.round((score / sampleQuestions.length) * 100);
+  const minutesLeft = Math.floor(timeLeft / 60);
+  const secondsLeft = timeLeft % 60;
 
   if (!examStarted) {
     return (
@@ -243,6 +272,54 @@ export default function TestsPage() {
     );
   }
 
+  if (examFinished) {
+    return (
+      <AppLayout>
+        <div className="page-header">
+          <h1 className="page-title">Test Complete</h1>
+          <p className="page-subtitle">Review your score and repeat weak topics</p>
+        </div>
+
+        <div className="card mb-4">
+          <div className="text-center">
+            <div style={{ fontSize: '3rem', fontWeight: 'bold', color: scorePercent >= 75 ? 'var(--success)' : 'var(--error)' }}>
+              {scorePercent}%
+            </div>
+            <p className="text-xl">{score} / {sampleQuestions.length} correct</p>
+            <p className="text-muted">Answered: {answeredCount} / {sampleQuestions.length}</p>
+          </div>
+        </div>
+
+        <div className="card mb-4">
+          <h3 className="card-title mb-4">Debrief</h3>
+          <div className="flex flex-col gap-2">
+            {sampleQuestions.map((question, idx) => {
+              const userAnswer = answers[idx];
+              const isCorrect = userAnswer === question.correct;
+              return (
+                <div key={question.id} className="flex items-center justify-between" style={{ padding: '0.75rem', background: 'var(--bg-secondary)', borderRadius: '0.5rem' }}>
+                  <span>{idx + 1}. {question.question}</span>
+                  <span className={`tag ${userAnswer === null ? 'tag-warning' : isCorrect ? 'tag-success' : 'tag-error'}`}>
+                    {userAnswer === null ? 'Unanswered' : isCorrect ? 'Correct' : 'Wrong'}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        <div className="flex gap-4">
+          <button className="btn btn-secondary" style={{ flex: 1 }} onClick={handleRestart}>
+            <RotateCcw size={16} /> Retry Test
+          </button>
+          <Link href="/drills/daily" className="btn btn-primary" style={{ flex: 1 }}>
+            Review Weak Items
+          </Link>
+        </div>
+      </AppLayout>
+    );
+  }
+
   const question = sampleQuestions[currentQuestion];
 
   return (
@@ -255,7 +332,7 @@ export default function TestsPage() {
           </p>
         </div>
         <div className="drill-timer" style={{ fontSize: '1.5rem', padding: '0.5rem 1rem' }}>
-          15:00
+          {minutesLeft}:{secondsLeft.toString().padStart(2, '0')}
         </div>
       </div>
 
@@ -355,9 +432,9 @@ export default function TestsPage() {
               Next
             </button>
           ) : (
-            <Link href="/tests/results" className="btn btn-primary">
-              View Results
-            </Link>
+            <button className="btn btn-primary" onClick={() => setExamFinished(true)}>
+              Finish Test
+            </button>
           )}
         </div>
       </div>

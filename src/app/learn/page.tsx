@@ -5,7 +5,6 @@ import {
   Calculator, 
   Map, 
   Cloud, 
-  AlertTriangle, 
   Plane,
   Target,
   ChevronRight
@@ -37,14 +36,6 @@ const modules = [
     priority: 'high',
   },
   {
-    id: 'routes',
-    title: 'Routes & Airspace (ENR 6)',
-    icon: Map,
-    description: 'Airways, TMA, CTR, restricted areas',
-    doc: 'ENR 6',
-    priority: 'medium',
-  },
-  {
     id: 'metar',
     title: 'METAR/TAF (IPMA)',
     icon: Cloud,
@@ -53,20 +44,12 @@ const modules = [
     priority: 'high',
   },
   {
-    id: 'notam',
-    title: 'NOTAM',
-    icon: AlertTriangle,
-    description: 'Briefing, triage, impact analysis',
-    doc: 'AIS',
-    priority: 'medium',
-  },
-  {
-    id: 'performance',
-    title: 'Performance & CG',
+    id: '80-20',
+    title: 'Study Strategy (80/20)',
     icon: Calculator,
-    description: 'POH tables, density altitude, centrage',
-    doc: 'POH',
-    priority: 'medium',
+    description: 'How to prioritize retrieval, spacing, and exam simulations',
+    doc: 'EASA + evidence-based learning',
+    priority: 'high',
   },
 ];
 
