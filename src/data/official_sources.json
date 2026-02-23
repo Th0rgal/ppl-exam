@@ -1,0 +1,77 @@
+{
+  "generatedAt": "2026-02-23T15:31:47.336Z",
+  "pages": [
+    {
+      "title": "NAV Portugal eAIP - GEN 2.3 Chart Symbols",
+      "url": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+      "purpose": "Primary source of official chart symbol images used on this page"
+    },
+    {
+      "title": "NAV Portugal eAIP - ENR 1.2 Visual Flight Rules",
+      "url": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-ENR-1.2-en-PT.html",
+      "purpose": "Related VFR operational context and terminology",
+      "extractedHeadings": [
+        "Conditions applicable for VFR flights at night",
+        "Access of VFR flights above flight level 195 or at transonic or supersonic speeds",
+        "VFR Routes in Lisboa TMA",
+        "VFR Tunnels in Porto TMA",
+        "VFR TUNNEL IN FARO TMA"
+      ]
+    },
+    {
+      "title": "NAV Portugal eAIP - ENR 6 En-route Charts Index",
+      "url": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-ENR-6-en-PT.html",
+      "purpose": "Related official chart index and linked PDF charts",
+      "sampleCharts": [
+        {
+          "title": "ENR -6.01-1 - AIR TRAFFIC SERVICE SYSTEM - LPPC LOWER AIRSPACE BELOW FL195",
+          "pdf": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/LP_ENR_6_01-1_en.pdf"
+        },
+        {
+          "title": "ENR-6.01-3 - AIR TRAFFIC SERVICE SYSTEM - LPPC UPPER ROUTE AIRSPACE FL245/FL195",
+          "pdf": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/LP_ENR_6_01-3_en.pdf"
+        },
+        {
+          "title": "ENR-6.01-5 - AIR TRAFFIC SERVICE SYSTEM - LPPC FREE ROUTE AIRSPACE ABOVE FL245",
+          "pdf": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/LP_ENR_6_01-5_en.pdf"
+        },
+        {
+          "title": "ENR-6.01-7 - AIR TRAFFIC SERVICE SYSTEM - TANGO ROUTES - LPPO and LPPC",
+          "pdf": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/LP_ENR_6_01-7_en.pdf"
+        },
+        {
+          "title": "ENR-6.01-9 - AIR TRAFFIC SERVICE SYSTEM - SANTA MARIA OCEANIC FIR (LPPO)",
+          "pdf": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/LP_ENR_6_01-9_en.pdf"
+        },
+        {
+          "title": "ENR-6.02-1 - TERMINAL AREA CHART INBOUND, OUTBOUND AND TRANSIT ROUTING - TMA SANTA MARIA (LPAZ)",
+          "pdf": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/LP_ENR_6_02-1_en.pdf"
+        },
+        {
+          "title": "ENR-6.02-3 - TERMINAL AREA CHART INBOUND, OUTBOUND AND TRANSIT ROUTING - TMA SANTA MARIA (LPAZ) Detail of Area marked on Chart ENR 6.02-1",
+          "pdf": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/LP_ENR_6_02-3_en.pdf"
+        },
+        {
+          "title": "ENR-6.02-5 - TERMINAL AREA CHART INBOUND, OUTBOUND AND TRANSIT ROUTING - TMA MADEIRA",
+          "pdf": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/LP_ENR_6_02-5_en.pdf"
+        },
+        {
+          "title": "ENR-6.02-7 - TERMINAL AREA CHART INBOUND, OUTBOUND AND TRANSIT ROUTING - TMA LISBOA",
+          "pdf": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/LP_ENR_6_02-7_en.pdf"
+        },
+        {
+          "title": "ENR-6.02-9 - TERMINAL AREA CHART INBOUND, OUTBOUND AND TRANSIT ROUTING - TMA FARO",
+          "pdf": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/LP_ENR_6_02-9_en.pdf"
+        },
+        {
+          "title": "ENR-6.02-11 - TERMINAL AREA CHART - INBOUND, OUTBOUND and TRANSIT ROUTING - TMA PORTO",
+          "pdf": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/LP_ENR_6_02-11_en.pdf"
+        },
+        {
+          "title": "ENR-6.03-1 - VFR ROUTES IN LPPT TMA",
+          "pdf": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/LP_ENR_6_03-1_en.pdf"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,812 @@
+[
+  {
+    "id": "off-sym-001",
+    "name": "Civil Aerodrome - Land",
+    "category": "Aerodromes",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010112611530303430000.jpg",
+    "imageFile": "GEN232010112611530303430000.jpg",
+    "image": "/images/official-symbols/GEN232010112611530303430000.jpg",
+    "slug": "civil-aerodrome-land"
+  },
+  {
+    "id": "off-sym-002",
+    "name": "Military Aerodrome - Land",
+    "category": "Aerodromes",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010112611535400150000.jpg",
+    "imageFile": "GEN232010112611535400150000.jpg",
+    "image": "/images/official-symbols/GEN232010112611535400150000.jpg",
+    "slug": "military-aerodrome-land"
+  },
+  {
+    "id": "off-sym-003",
+    "name": "Joint Civil and Military Aerodrome - Land",
+    "category": "Aerodromes",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010112214543802960000.jpg",
+    "imageFile": "GEN232010112214543802960000.jpg",
+    "image": "/images/official-symbols/GEN232010112214543802960000.jpg",
+    "slug": "joint-civil-and-military-aerodrome-land"
+  },
+  {
+    "id": "off-sym-004",
+    "name": "Emergency Aerodrome or Aerodrome with no facilities",
+    "category": "Aerodromes",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010112214565108430000.jpg",
+    "imageFile": "GEN232010112214565108430000.jpg",
+    "image": "/images/official-symbols/GEN232010112214565108430000.jpg",
+    "slug": "emergency-aerodrome-or-aerodrome-with-no-facilities"
+  },
+  {
+    "id": "off-sym-005",
+    "name": "Aerodrome without classification",
+    "category": "Aerodromes",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010112214583803750000.jpg",
+    "imageFile": "GEN232010112214583803750000.jpg",
+    "image": "/images/official-symbols/GEN232010112214583803750000.jpg",
+    "slug": "aerodrome-without-classification"
+  },
+  {
+    "id": "off-sym-006",
+    "name": "Abandoned or Closed Aerodrome",
+    "category": "Aerodromes",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010112215000805620000.jpg",
+    "imageFile": "GEN232010112215000805620000.jpg",
+    "image": "/images/official-symbols/GEN232010112215000805620000.jpg",
+    "slug": "abandoned-or-closed-aerodrome"
+  },
+  {
+    "id": "off-sym-007",
+    "name": "Heliport",
+    "category": "Aerodromes",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010112215175803900000.jpg",
+    "imageFile": "GEN232010112215175803900000.jpg",
+    "image": "/images/official-symbols/GEN232010112215175803900000.jpg",
+    "slug": "heliport"
+  },
+  {
+    "id": "off-sym-008",
+    "name": "Ultra Light Aircraft Aerodrome",
+    "category": "Aerodromes",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010112215192001560000.jpg",
+    "imageFile": "GEN232010112215192001560000.jpg",
+    "image": "/images/official-symbols/GEN232010112215192001560000.jpg",
+    "slug": "ultra-light-aircraft-aerodrome"
+  },
+  {
+    "id": "off-sym-009",
+    "name": "Alignment Paved Runway",
+    "category": "Aerodromes",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010112215211204370000.jpg",
+    "imageFile": "GEN232010112215211204370000.jpg",
+    "image": "/images/official-symbols/GEN232010112215211204370000.jpg",
+    "slug": "alignment-paved-runway"
+  },
+  {
+    "id": "off-sym-010",
+    "name": "Alignment Grass Runway",
+    "category": "Aerodromes",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010112215242600780000.jpg",
+    "imageFile": "GEN232010112215242600780000.jpg",
+    "image": "/images/official-symbols/GEN232010112215242600780000.jpg",
+    "slug": "alignment-grass-runway"
+  },
+  {
+    "id": "off-sym-011",
+    "name": "Paved Runway",
+    "category": "Aerodromes",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010112215264700930000.jpg",
+    "imageFile": "GEN232010112215264700930000.jpg",
+    "image": "/images/official-symbols/GEN232010112215264700930000.jpg",
+    "slug": "paved-runway"
+  },
+  {
+    "id": "off-sym-012",
+    "name": "Grass Runway",
+    "category": "Aerodromes",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010112615444703120000.jpg",
+    "imageFile": "GEN232010112615444703120000.jpg",
+    "image": "/images/official-symbols/GEN232010112615444703120000.jpg",
+    "slug": "grass-runway"
+  },
+  {
+    "id": "off-sym-013",
+    "name": "Runway Pattern",
+    "category": "Aerodromes",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010112215322000000000.jpg",
+    "imageFile": "GEN232010112215322000000000.jpg",
+    "image": "/images/official-symbols/GEN232010112215322000000000.jpg",
+    "slug": "runway-pattern"
+  },
+  {
+    "id": "off-sym-014",
+    "name": "Apron Parking Areas",
+    "category": "Aerodromes",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010112611493902340000.jpg",
+    "imageFile": "GEN232010112611493902340000.jpg",
+    "image": "/images/official-symbols/GEN232010112611493902340000.jpg",
+    "slug": "apron-parking-areas"
+  },
+  {
+    "id": "off-sym-015",
+    "name": "ARP",
+    "category": "Aerodromes",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232022101816015603060000.gif",
+    "imageFile": "GEN232022101816015603060000.gif",
+    "image": "/images/official-symbols/GEN232022101816015603060000.gif",
+    "slug": "arp"
+  },
+  {
+    "id": "off-sym-016",
+    "name": "VOR Check Point",
+    "category": "Aerodromes",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232022101816021006670000.gif",
+    "imageFile": "GEN232022101816021006670000.gif",
+    "image": "/images/official-symbols/GEN232022101816021006670000.gif",
+    "slug": "vor-check-point"
+  },
+  {
+    "id": "off-sym-017",
+    "name": "Wind Direction Indicator (lighted WDI)",
+    "category": "Aerodromes",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232022101816251807320000.gif",
+    "imageFile": "GEN232022101816251807320000.gif",
+    "image": "/images/official-symbols/GEN232022101816251807320000.gif",
+    "slug": "wind-direction-indicator-lighted-wdi"
+  },
+  {
+    "id": "off-sym-018",
+    "name": "Stopbar",
+    "category": "Aerodromes",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232022101816245903130000.gif",
+    "imageFile": "GEN232022101816245903130000.gif",
+    "image": "/images/official-symbols/GEN232022101816245903130000.gif",
+    "slug": "stopbar"
+  },
+  {
+    "id": "off-sym-019",
+    "name": "Wind Direction Indicator (unlighted WDI)",
+    "category": "Aerodromes",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232022101816244203430000.gif",
+    "imageFile": "GEN232022101816244203430000.gif",
+    "image": "/images/official-symbols/GEN232022101816244203430000.gif",
+    "slug": "wind-direction-indicator-unlighted-wdi"
+  },
+  {
+    "id": "off-sym-020",
+    "name": "RWY holding position",
+    "category": "Aerodromes",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232022101816270202200000.gif",
+    "imageFile": "GEN232022101816270202200000.gif",
+    "image": "/images/official-symbols/GEN232022101816270202200000.gif",
+    "slug": "rwy-holding-position"
+  },
+  {
+    "id": "off-sym-021",
+    "name": "Runway holding position",
+    "category": "Aerodromes",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232022101816271108320000.gif",
+    "imageFile": "GEN232022101816271108320000.gif",
+    "image": "/images/official-symbols/GEN232022101816271108320000.gif",
+    "slug": "runway-holding-position"
+  },
+  {
+    "id": "off-sym-022",
+    "name": "Apron light",
+    "category": "Aerodromes",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232022101816272401480000.gif",
+    "imageFile": "GEN232022101816272401480000.gif",
+    "image": "/images/official-symbols/GEN232022101816272401480000.gif",
+    "slug": "apron-light"
+  },
+  {
+    "id": "off-sym-023",
+    "name": "Intermediate holding position",
+    "category": "Aerodromes",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232022101816274209600000.gif",
+    "imageFile": "GEN232022101816274209600000.gif",
+    "image": "/images/official-symbols/GEN232022101816274209600000.gif",
+    "slug": "intermediate-holding-position"
+  },
+  {
+    "id": "off-sym-024",
+    "name": "RWY/TWY light",
+    "category": "Aerodromes",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232022101816280407260000.gif",
+    "imageFile": "GEN232022101816280407260000.gif",
+    "image": "/images/official-symbols/GEN232022101816280407260000.gif",
+    "slug": "rwy-twy-light"
+  },
+  {
+    "id": "off-sym-025",
+    "name": "RWY break",
+    "category": "Aerodromes",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232022101816284706810000.gif",
+    "imageFile": "GEN232022101816284706810000.gif",
+    "image": "/images/official-symbols/GEN232022101816284706810000.gif",
+    "slug": "rwy-break"
+  },
+  {
+    "id": "off-sym-026",
+    "name": "DME",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232014101713401905290000.jpg",
+    "imageFile": "GEN232014101713401905290000.jpg",
+    "image": "/images/official-symbols/GEN232014101713401905290000.jpg",
+    "slug": "dme"
+  },
+  {
+    "id": "off-sym-027",
+    "name": "NDB - Compulsory FlyBy",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010111614362601560000.jpg",
+    "imageFile": "GEN232010111614362601560000.jpg",
+    "image": "/images/official-symbols/GEN232010111614362601560000.jpg",
+    "slug": "ndb-compulsory-flyby"
+  },
+  {
+    "id": "off-sym-028",
+    "name": "NDB - Compulsory FlyOver",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010111614412509370000.jpg",
+    "imageFile": "GEN232010111614412509370000.jpg",
+    "image": "/images/official-symbols/GEN232010111614412509370000.jpg",
+    "slug": "ndb-compulsory-flyover"
+  },
+  {
+    "id": "off-sym-029",
+    "name": "NDB - On Request FlyBy",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010111614435305000000.jpg",
+    "imageFile": "GEN232010111614435305000000.jpg",
+    "image": "/images/official-symbols/GEN232010111614435305000000.jpg",
+    "slug": "ndb-on-request-flyby"
+  },
+  {
+    "id": "off-sym-030",
+    "name": "NDB - On Request FlyOver",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010111614461504840000.jpg",
+    "imageFile": "GEN232010111614461504840000.jpg",
+    "image": "/images/official-symbols/GEN232010111614461504840000.jpg",
+    "slug": "ndb-on-request-flyover"
+  },
+  {
+    "id": "off-sym-031",
+    "name": "TACAN - Compulsory FlyBy",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010111615044209530000.jpg",
+    "imageFile": "GEN232010111615044209530000.jpg",
+    "image": "/images/official-symbols/GEN232010111615044209530000.jpg",
+    "slug": "tacan-compulsory-flyby"
+  },
+  {
+    "id": "off-sym-032",
+    "name": "TACAN - Compulsory FlyOver",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232016053015454106070001.jpg",
+    "imageFile": "GEN232016053015454106070001.jpg",
+    "image": "/images/official-symbols/GEN232016053015454106070001.jpg",
+    "slug": "tacan-compulsory-flyover"
+  },
+  {
+    "id": "off-sym-033",
+    "name": "TACAN - On Request FlyBy",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010112612333605150000.jpg",
+    "imageFile": "GEN232010112612333605150000.jpg",
+    "image": "/images/official-symbols/GEN232010112612333605150000.jpg",
+    "slug": "tacan-on-request-flyby"
+  },
+  {
+    "id": "off-sym-034",
+    "name": "TACAN - On Request FlyOver",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010112612354504530000.jpg",
+    "imageFile": "GEN232010112612354504530000.jpg",
+    "image": "/images/official-symbols/GEN232010112612354504530000.jpg",
+    "slug": "tacan-on-request-flyover"
+  },
+  {
+    "id": "off-sym-035",
+    "name": "VOR - Compulsory FlyBy",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010112612373203120000.jpg",
+    "imageFile": "GEN232010112612373203120000.jpg",
+    "image": "/images/official-symbols/GEN232010112612373203120000.jpg",
+    "slug": "vor-compulsory-flyby"
+  },
+  {
+    "id": "off-sym-036",
+    "name": "VOR - Compulsory FlyOver",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010112612394404680000.jpg",
+    "imageFile": "GEN232010112612394404680000.jpg",
+    "image": "/images/official-symbols/GEN232010112612394404680000.jpg",
+    "slug": "vor-compulsory-flyover"
+  },
+  {
+    "id": "off-sym-037",
+    "name": "VOR - On Request FlyBy",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010112612410505780000.jpg",
+    "imageFile": "GEN232010112612410505780000.jpg",
+    "image": "/images/official-symbols/GEN232010112612410505780000.jpg",
+    "slug": "vor-on-request-flyby"
+  },
+  {
+    "id": "off-sym-038",
+    "name": "VOR - On Request FlyOver",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010112612424909370000.jpg",
+    "imageFile": "GEN232010112612424909370000.jpg",
+    "image": "/images/official-symbols/GEN232010112612424909370000.jpg",
+    "slug": "vor-on-request-flyover"
+  },
+  {
+    "id": "off-sym-039",
+    "name": "VOR / DME - Compulsory FlyBy",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010112614082901870000.jpg",
+    "imageFile": "GEN232010112614082901870000.jpg",
+    "image": "/images/official-symbols/GEN232010112614082901870000.jpg",
+    "slug": "vor-dme-compulsory-flyby"
+  },
+  {
+    "id": "off-sym-040",
+    "name": "VOR / DME - Compulsory FlyOver",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010112614104305930000.jpg",
+    "imageFile": "GEN232010112614104305930000.jpg",
+    "image": "/images/official-symbols/GEN232010112614104305930000.jpg",
+    "slug": "vor-dme-compulsory-flyover"
+  },
+  {
+    "id": "off-sym-041",
+    "name": "VOR / DME - On Request FlyBy",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010112614123802180000.jpg",
+    "imageFile": "GEN232010112614123802180000.jpg",
+    "image": "/images/official-symbols/GEN232010112614123802180000.jpg",
+    "slug": "vor-dme-on-request-flyby"
+  },
+  {
+    "id": "off-sym-042",
+    "name": "VOR / DME - On Request FlyOver",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010112614144605310000.jpg",
+    "imageFile": "GEN232010112614144605310000.jpg",
+    "image": "/images/official-symbols/GEN232010112614144605310000.jpg",
+    "slug": "vor-dme-on-request-flyover"
+  },
+  {
+    "id": "off-sym-043",
+    "name": "VORTAC - Compulsory FlyBy",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010112614171008750000.jpg",
+    "imageFile": "GEN232010112614171008750000.jpg",
+    "image": "/images/official-symbols/GEN232010112614171008750000.jpg",
+    "slug": "vortac-compulsory-flyby"
+  },
+  {
+    "id": "off-sym-044",
+    "name": "VORTAC - Compulsory FlyOver",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010112614192303750000.jpg",
+    "imageFile": "GEN232010112614192303750000.jpg",
+    "image": "/images/official-symbols/GEN232010112614192303750000.jpg",
+    "slug": "vortac-compulsory-flyover"
+  },
+  {
+    "id": "off-sym-045",
+    "name": "VORTAC - On Request FlyBy",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010112614213708900000.jpg",
+    "imageFile": "GEN232010112614213708900000.jpg",
+    "image": "/images/official-symbols/GEN232010112614213708900000.jpg",
+    "slug": "vortac-on-request-flyby"
+  },
+  {
+    "id": "off-sym-046",
+    "name": "VORTAC - On Request FlyOver",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010112614233207960000.jpg",
+    "imageFile": "GEN232010112614233207960000.jpg",
+    "image": "/images/official-symbols/GEN232010112614233207960000.jpg",
+    "slug": "vortac-on-request-flyover"
+  },
+  {
+    "id": "off-sym-047",
+    "name": "Localizer Beam",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010112614251707960000.jpg",
+    "imageFile": "GEN232010112614251707960000.jpg",
+    "image": "/images/official-symbols/GEN232010112614251707960000.jpg",
+    "slug": "localizer-beam"
+  },
+  {
+    "id": "off-sym-048",
+    "name": "3. Air Traffic Services VFR Reporting Point - Compulsory FlyBy Intersection - Compulsory FlyBy",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010112615105707500000.jpg",
+    "imageFile": "GEN232010112615105707500000.jpg",
+    "image": "/images/official-symbols/GEN232010112615105707500000.jpg",
+    "slug": "3-air-traffic-services-vfr-reporting-point-compulsory-flyby-intersection-compuls"
+  },
+  {
+    "id": "off-sym-049",
+    "name": "VFR Reporting Point - Compulsory FlyOver Intersection - Compulsory FlyOver",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010112615122702960000.jpg",
+    "imageFile": "GEN232010112615122702960000.jpg",
+    "image": "/images/official-symbols/GEN232010112615122702960000.jpg",
+    "slug": "vfr-reporting-point-compulsory-flyover-intersection-compulsory-flyover"
+  },
+  {
+    "id": "off-sym-050",
+    "name": "VFR Reporting Point - On Request FlyBy Intersection - On Request FlyBy",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010112615133007340000.jpg",
+    "imageFile": "GEN232010112615133007340000.jpg",
+    "image": "/images/official-symbols/GEN232010112615133007340000.jpg",
+    "slug": "vfr-reporting-point-on-request-flyby-intersection-on-request-flyby"
+  },
+  {
+    "id": "off-sym-051",
+    "name": "VFR Reporting Point - On Request FlyOver Intersection - On Request FlyOver",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010112615151404840000.jpg",
+    "imageFile": "GEN232010112615151404840000.jpg",
+    "image": "/images/official-symbols/GEN232010112615151404840000.jpg",
+    "slug": "vfr-reporting-point-on-request-flyover-intersection-on-request-flyover"
+  },
+  {
+    "id": "off-sym-052",
+    "name": "Waypoint - Compulsory FlyBy",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010112615161100150000.jpg",
+    "imageFile": "GEN232010112615161100150000.jpg",
+    "image": "/images/official-symbols/GEN232010112615161100150000.jpg",
+    "slug": "waypoint-compulsory-flyby"
+  },
+  {
+    "id": "off-sym-053",
+    "name": "Waypoint - Compulsory FlyOver",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010112615425204370000.jpg",
+    "imageFile": "GEN232010112615425204370000.jpg",
+    "image": "/images/official-symbols/GEN232010112615425204370000.jpg",
+    "slug": "waypoint-compulsory-flyover"
+  },
+  {
+    "id": "off-sym-054",
+    "name": "Waypoint - On Request FlyBy",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010112615413305310000.jpg",
+    "imageFile": "GEN232010112615413305310000.jpg",
+    "image": "/images/official-symbols/GEN232010112615413305310000.jpg",
+    "slug": "waypoint-on-request-flyby"
+  },
+  {
+    "id": "off-sym-055",
+    "name": "Waypoint - On Request FlyOver",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010112615433301870000.jpg",
+    "imageFile": "GEN232010112615433301870000.jpg",
+    "image": "/images/official-symbols/GEN232010112615433301870000.jpg",
+    "slug": "waypoint-on-request-flyover"
+  },
+  {
+    "id": "off-sym-056",
+    "name": "FIR",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010113010421308120000.jpg",
+    "imageFile": "GEN232010113010421308120000.jpg",
+    "image": "/images/official-symbols/GEN232010113010421308120000.jpg",
+    "slug": "fir"
+  },
+  {
+    "id": "off-sym-057",
+    "name": "TMA",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010113010413509680000.jpg",
+    "imageFile": "GEN232010113010413509680000.jpg",
+    "image": "/images/official-symbols/GEN232010113010413509680000.jpg",
+    "slug": "tma"
+  },
+  {
+    "id": "off-sym-058",
+    "name": "CTR",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010113010471901870000.jpg",
+    "imageFile": "GEN232010113010471901870000.jpg",
+    "image": "/images/official-symbols/GEN232010113010471901870000.jpg",
+    "slug": "ctr"
+  },
+  {
+    "id": "off-sym-059",
+    "name": "ATZ",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010113010490401870000.jpg",
+    "imageFile": "GEN232010113010490401870000.jpg",
+    "image": "/images/official-symbols/GEN232010113010490401870000.jpg",
+    "slug": "atz"
+  },
+  {
+    "id": "off-sym-060",
+    "name": "FAF",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232022020814433003950000.gif",
+    "imageFile": "GEN232022020814433003950000.gif",
+    "image": "/images/official-symbols/GEN232022020814433003950000.gif",
+    "slug": "faf"
+  },
+  {
+    "id": "off-sym-061",
+    "name": "At or above altitude",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232022101815552000390000.gif",
+    "imageFile": "GEN232022101815552000390000.gif",
+    "image": "/images/official-symbols/GEN232022101815552000390000.gif",
+    "slug": "at-or-above-altitude"
+  },
+  {
+    "id": "off-sym-062",
+    "name": "At or below altitude",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232022101815553703380000.gif",
+    "imageFile": "GEN232022101815553703380000.gif",
+    "image": "/images/official-symbols/GEN232022101815553703380000.gif",
+    "slug": "at-or-below-altitude"
+  },
+  {
+    "id": "off-sym-063",
+    "name": "At altitude",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232022101815555103160000.gif",
+    "imageFile": "GEN232022101815555103160000.gif",
+    "image": "/images/official-symbols/GEN232022101815555103160000.gif",
+    "slug": "at-altitude"
+  },
+  {
+    "id": "off-sym-064",
+    "name": "Altitude window",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232022101815560706230000.gif",
+    "imageFile": "GEN232022101815560706230000.gif",
+    "image": "/images/official-symbols/GEN232022101815560706230000.gif",
+    "slug": "altitude-window"
+  },
+  {
+    "id": "off-sym-065",
+    "name": "Mandatory speed",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232022101815570006520000.gif",
+    "imageFile": "GEN232022101815570006520000.gif",
+    "image": "/images/official-symbols/GEN232022101815570006520000.gif",
+    "slug": "mandatory-speed"
+  },
+  {
+    "id": "off-sym-066",
+    "name": "Maximum speed",
+    "category": "Radio Facilities",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232022101815571008380000.gif",
+    "imageFile": "GEN232022101815571008380000.gif",
+    "image": "/images/official-symbols/GEN232022101815571008380000.gif",
+    "slug": "maximum-speed"
+  },
+  {
+    "id": "off-sym-067",
+    "name": "Prohibited (P), Restricted (R) or Danger (D) Area, Temporary Reserved Area",
+    "category": "Airspace Restrictions",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232022101816003706750000.gif",
+    "imageFile": "GEN232022101816003706750000.gif",
+    "image": "/images/official-symbols/GEN232022101816003706750000.gif",
+    "slug": "prohibited-p-restricted-r-or-danger-d-area-temporary-reserved-area"
+  },
+  {
+    "id": "off-sym-068",
+    "name": "Prohibited (P), Restricted (R) or Danger (D) Area, Temporary Reserved Area",
+    "category": "Airspace Restrictions",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232022102011482906340014.gif",
+    "imageFile": "GEN232022102011482906340014.gif",
+    "image": "/images/official-symbols/GEN232022102011482906340014.gif",
+    "slug": "prohibited-p-restricted-r-or-danger-d-area-temporary-reserved-area"
+  },
+  {
+    "id": "off-sym-069",
+    "name": "Exceptionally High Lighted Obstacle",
+    "category": "Obstacles",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010120211064408280000.jpg",
+    "imageFile": "GEN232010120211064408280000.jpg",
+    "image": "/images/official-symbols/GEN232010120211064408280000.jpg",
+    "slug": "exceptionally-high-lighted-obstacle"
+  },
+  {
+    "id": "off-sym-070",
+    "name": "Exceptionally High Obstacle",
+    "category": "Obstacles",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010120211052901710000.jpg",
+    "imageFile": "GEN232010120211052901710000.jpg",
+    "image": "/images/official-symbols/GEN232010120211052901710000.jpg",
+    "slug": "exceptionally-high-obstacle"
+  },
+  {
+    "id": "off-sym-071",
+    "name": "Group of lighted Obstacles",
+    "category": "Obstacles",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010113011505507650000.jpg",
+    "imageFile": "GEN232010113011505507650000.jpg",
+    "image": "/images/official-symbols/GEN232010113011505507650000.jpg",
+    "slug": "group-of-lighted-obstacles"
+  },
+  {
+    "id": "off-sym-072",
+    "name": "Group of Obstacles",
+    "category": "Obstacles",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010113011520804530000.jpg",
+    "imageFile": "GEN232010113011520804530000.jpg",
+    "image": "/images/official-symbols/GEN232010113011520804530000.jpg",
+    "slug": "group-of-obstacles"
+  },
+  {
+    "id": "off-sym-073",
+    "name": "Lighted Obstacle",
+    "category": "Obstacles",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010113011531303900000.jpg",
+    "imageFile": "GEN232010113011531303900000.jpg",
+    "image": "/images/official-symbols/GEN232010113011531303900000.jpg",
+    "slug": "lighted-obstacle"
+  },
+  {
+    "id": "off-sym-074",
+    "name": "Obstacle",
+    "category": "Obstacles",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010113011541902340000.jpg",
+    "imageFile": "GEN232010113011541902340000.jpg",
+    "image": "/images/official-symbols/GEN232010113011541902340000.jpg",
+    "slug": "obstacle"
+  },
+  {
+    "id": "off-sym-075",
+    "name": "Group of lighted Wind Turbines",
+    "category": "Obstacles",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010113011552204060000.jpg",
+    "imageFile": "GEN232010113011552204060000.jpg",
+    "image": "/images/official-symbols/GEN232010113011552204060000.jpg",
+    "slug": "group-of-lighted-wind-turbines"
+  },
+  {
+    "id": "off-sym-076",
+    "name": "Group of Wind Turbines",
+    "category": "Obstacles",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010113011562207650000.jpg",
+    "imageFile": "GEN232010113011562207650000.jpg",
+    "image": "/images/official-symbols/GEN232010113011562207650000.jpg",
+    "slug": "group-of-wind-turbines"
+  },
+  {
+    "id": "off-sym-077",
+    "name": "Lighted Wind Turbine",
+    "category": "Obstacles",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010113011574403430000.jpg",
+    "imageFile": "GEN232010113011574403430000.jpg",
+    "image": "/images/official-symbols/GEN232010113011574403430000.jpg",
+    "slug": "lighted-wind-turbine"
+  },
+  {
+    "id": "off-sym-078",
+    "name": "Wind Turbine",
+    "category": "Obstacles",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010113011584305000000.jpg",
+    "imageFile": "GEN232010113011584305000000.jpg",
+    "image": "/images/official-symbols/GEN232010113011584305000000.jpg",
+    "slug": "wind-turbine"
+  },
+  {
+    "id": "off-sym-079",
+    "name": "Scale Break",
+    "category": "Miscellaneous",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232010113014293208280000.jpg",
+    "imageFile": "GEN232010113014293208280000.jpg",
+    "image": "/images/official-symbols/GEN232010113014293208280000.jpg",
+    "slug": "scale-break"
+  },
+  {
+    "id": "off-sym-080",
+    "name": "Lighthouse",
+    "category": "Miscellaneous",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232022102011482906650016.jpg",
+    "imageFile": "GEN232022102011482906650016.jpg",
+    "image": "/images/official-symbols/GEN232022102011482906650016.jpg",
+    "slug": "lighthouse"
+  },
+  {
+    "id": "off-sym-081",
+    "name": "Larger figure representing units of thousands feet and smaller figure units of hundreds of feet, ex: 9700 FT.",
+    "category": "Miscellaneous",
+    "sourcePage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/html/eAIP/LP-GEN-2.3-en-PT.html",
+    "sourceImage": "https://ais.nav.pt/wp-content/uploads/AIS_Files/eAIP_Current/eAIP_Online/eAIP/graphics/eAIP/GEN232023101613551901610000.jpg",
+    "imageFile": "GEN232023101613551901610000.jpg",
+    "image": "/images/official-symbols/GEN232023101613551901610000.jpg",
+    "slug": "larger-figure-representing-units-of-thousands-feet-and-smaller-figure-units-of-h"
+  }
+]
